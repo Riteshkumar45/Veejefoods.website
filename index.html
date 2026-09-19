@@ -4,45 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veeje Foods — Premium Indian Spices, Agro Commodities & Dry Fruits Export</title>
-  <meta name="description" content="APEDA & FSSAI certified premier Indian exporter of export-grade Cumin (Jeera), Sesame Seeds, Haldi, Red Chilli, Hing, Makhana, Kaju, Almonds, and Dehydrated Onion Powder. Direct container stuffing from Mundra and Nhava Sheva (JNPT) ports.">
-  <meta name="keywords" content="Indian spices exporter, Cumin seeds jeera export, Hulled sesame seeds Gujarat, Salem turmeric finger export, Guntur S17 red chilli, Indian Hing asafoetida, Phool Makhana export Bihar, Cashew nuts W240 export, Dehydrated onion powder India">
+  <meta name="description" content="APEDA & FSSAI certified premier Indian exporter of export-grade Cumin Seeds (Jeera), Hulled Sesame Seeds, Salem Turmeric Finger, Compounded Hing, Jumbo Phool Makhana, Cashews (Kaju), and Dehydrated Onion Powder. Direct container stuffing from Mundra & JNPT ports.">
+  <meta name="keywords" content="Veeje Foods, Indian spices exporter, Cumin seeds jeera export, Hulled sesame seeds Gujarat, Salem turmeric finger export, Compounded Hing asafoetida, Phool Makhana Bihar, Cashew nuts W240 W320, Dehydrated onion powder Mahuva">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts: Cinzel, Playfair Display & Inter -->
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
 
+  <!-- Tailwind Configuration for Royal Saffron & Terracotta Light Theme -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            brand: {
-              50: '#f0fdf4',
-              100: '#dcfce7',
-              200: '#bbf7d0',
-              600: '#16a34a',
-              700: '#15803d',
-              800: '#166534',
-              900: '#14532d',
-              950: '#03261c',
+            saffron: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              300: '#fdba74',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c', // Primary Royal Saffron
+              700: '#c2410c', // Spiced Terracotta
+              800: '#9a3412',
+              900: '#7c2d12',
+              950: '#431407',
             },
-            gold: {
-              50: '#fffbeb',
-              100: '#fef3c7',
+            amberGold: {
+              300: '#fde047',
               400: '#fbbf24',
               500: '#f59e0b',
               600: '#d97706',
-              700: '#b45309',
+            },
+            obsidian: {
+              800: '#292524',
+              900: '#1c1917',
+              950: '#0c0a09',
             }
           },
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            serif: ['Playfair Display', 'serif'],
-            cinzel: ['Cinzel', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+            cinzel: ['"Cinzel"', 'serif'],
           }
         }
       }
@@ -50,272 +57,303 @@
   </script>
 
   <style>
-    .light-mesh {
-      background-color: #fbfdfa;
+    .warm-linen {
+      background-color: #faf7f2;
       background-image: 
-        radial-gradient(at 0% 0%, rgba(22, 163, 74, 0.04) 0px, transparent 45%),
-        radial-gradient(at 100% 0%, rgba(217, 119, 6, 0.05) 0px, transparent 40%),
-        radial-gradient(at 50% 100%, rgba(3, 38, 28, 0.03) 0px, transparent 50%);
+        radial-gradient(at 0% 0%, rgba(234, 88, 12, 0.035) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(194, 65, 12, 0.04) 0px, transparent 40%),
+        radial-gradient(at 50% 100%, rgba(12, 10, 9, 0.02) 0px, transparent 50%);
     }
-    .card-shadow {
-      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+    .card-luxe {
+      box-shadow: 0 4px 20px -2px rgba(28, 25, 23, 0.04), 0 2px 6px -1px rgba(28, 25, 23, 0.02);
     }
-    .card-shadow-hover:hover {
-      box-shadow: 0 16px 32px -4px rgba(3, 38, 28, 0.10), 0 4px 12px -2px rgba(3, 38, 28, 0.04);
+    .card-luxe:hover {
+      box-shadow: 0 16px 36px -4px rgba(234, 88, 12, 0.12), 0 4px 14px -2px rgba(28, 25, 23, 0.06);
       transform: translateY(-3px);
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #ea580c 0%, #f59e0b 50%, #c2410c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   </style>
 </head>
-<body class="bg-[#fbfdfa] text-slate-800 antialiased min-h-screen flex flex-col font-sans light-mesh">
+<body class="warm-linen text-stone-800 antialiased min-h-screen flex flex-col font-sans">
 
-  <!-- Top Compliance & Rapid Trade Desk Bar -->
-  <div class="bg-brand-950 text-white text-xs border-b border-brand-900 py-2 px-4 sm:px-6">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-      <div class="flex items-center space-x-3 text-emerald-200/90 text-[11px] sm:text-xs">
-        <span class="flex items-center gap-1.5 font-semibold">
-          <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+  <div class="bg-obsidian-950 text-white text-xs border-b border-saffron-900/40 py-2.5 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center space-x-3 text-stone-300 text-[11px] sm:text-xs">
+        <span class="flex items-center gap-1.5 font-semibold text-amberGold-400">
+          <span class="w-2 h-2 rounded-full bg-saffron-500 animate-pulse"></span>
           APEDA, FSSAI & Spices Board Registered Exporter (Govt. of India)
         </span>
-        <span class="hidden md:inline text-emerald-600">|</span>
-        <span class="hidden md:inline text-emerald-100">Direct Container Stuffing: Mundra & JNPT Ports</span>
+        <span class="hidden md:inline text-stone-600">|</span>
+        <span class="hidden md:inline text-stone-300">Direct Container Stuffing: Mundra (INMUN1) & JNPT (INNSA1) Ports</span>
       </div>
       <div class="flex items-center space-x-4 text-[11px] sm:text-xs font-semibold ml-auto">
-        <a href="mailto:exports@veejefoods.com" class="hover:text-gold-400 transition flex items-center gap-1">
-          <svg class="w-3.5 h-3.5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        <a href="mailto:exports@veejefoods.com" class="hover:text-amberGold-400 transition flex items-center gap-1.5 text-stone-300">
+          <svg class="w-3.5 h-3.5 text-saffron-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
           exports@veejefoods.com
         </a>
-        <span class="text-emerald-700">|</span>
-        <a href="https://wa.me/919999999999?text=Hello%20Veeje%20Foods%20Trade%20Desk,%20I%20am%20interested%20in%20importing%20bulk%20agro%20commodities" target="_blank" class="text-emerald-300 hover:text-emerald-200 transition flex items-center gap-1.5">
+        <span class="text-stone-700">|</span>
+        <a href="https://wa.me/919999999999?text=Hello%20Veeje%20Foods%20Trade%20Desk,%20I%20am%20interested%20in%20importing%20bulk%20agro%20commodities" target="_blank" class="text-amberGold-400 hover:text-amberGold-300 transition flex items-center gap-1.5">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-          WhatsApp Desk
+          WhatsApp Trade Desk
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Primary Sticky Header -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all">
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200/90 shadow-sm transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Brand Logo -->
-      <a href="#/" class="flex items-center space-x-3 group">
-        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-950 via-brand-900 to-emerald-800 flex items-center justify-center shadow-md shadow-brand-950/15 border border-gold-400/40 group-hover:border-gold-400 transition">
-          <svg class="w-7 h-7" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 30 20 C 18 45, 25 80, 60 106 C 54 85, 48 55, 30 20 Z" fill="#22c55e"/>
-            <path d="M 60 106 C 72 82, 88 52, 98 22 C 92 48, 80 80, 60 106 Z" fill="#f59e0b"/>
-            <circle cx="88" cy="30" r="4" fill="#fbbf24"/>
-            <circle cx="80" cy="48" r="3.5" fill="#fbbf24"/>
-            <circle cx="60" cy="36" r="4.5" fill="#f59e0b"/>
+      <!-- Brand Logo featuring Your Exact Vector Symbol -->
+      <a href="#/" class="flex items-center space-x-3.5 group">
+        <!-- SVG Vector of Your Chosen Logo in Luxury Saffron & Gold -->
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center transition transform group-hover:scale-105 duration-300">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+            <defs>
+              <!-- Saffron to Terracotta gradient for the pod leaf -->
+              <linearGradient id="vLeafGrad" x1="20" y1="20" x2="50" y2="80" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ea580c"/>
+                <stop offset="0.6" stop-color="#c2410c"/>
+                <stop offset="1" stop-color="#9a3412"/>
+              </linearGradient>
+              <!-- Golden gradient for the slender stalk -->
+              <linearGradient id="vStalkGrad" x1="45" y1="75" x2="75" y2="25" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#fbbf24"/>
+                <stop offset="0.7" stop-color="#f59e0b"/>
+                <stop offset="1" stop-color="#ea580c"/>
+              </linearGradient>
+            </defs>
+            <!-- Badge Squircle with Golden Border -->
+            <rect x="5" y="5" width="90" height="90" rx="30" fill="#141210" stroke="#f59e0b" stroke-width="2.5"/>
+            <!-- Left organic pod leaf forming left arm of 'V' -->
+            <path d="M 46 76 C 40 64, 27 48, 28 32 C 34 38, 43 56, 46 76 Z" fill="url(#vLeafGrad)"/>
+            <path d="M 46 76 C 36 62, 27 48, 28 32 C 24 45, 34 65, 46 76 Z" fill="#ea580c" opacity="0.9"/>
+            <!-- Right slender golden stalk forming right arm of 'V' -->
+            <path d="M 46 76 C 52 62, 62 44, 69 28 C 67 36, 56 58, 46 76 Z" fill="url(#vStalkGrad)"/>
+            <!-- 3 Floating Golden Spice Seeds / Grains inside the V nexus -->
+            <circle cx="45" cy="46" r="3.8" fill="#f59e0b"/>
+            <circle cx="58" cy="52" r="3.2" fill="#fbbf24"/>
+            <circle cx="64" cy="38" r="3.6" fill="#f59e0b"/>
           </svg>
         </div>
         <div class="flex flex-col">
-          <span class="font-cinzel font-bold text-2xl tracking-wider text-brand-950 flex items-center gap-1 leading-none">
-            VEEJE <span class="text-gold-600 font-extrabold">FOODS</span>
+          <span class="font-cinzel font-bold text-2xl tracking-wider text-obsidian-950 flex items-center gap-1.5 leading-none">
+            VEEJE <span class="text-saffron-600 font-black">FOODS</span>
           </span>
-          <span class="text-[9.5px] font-bold tracking-[0.24em] text-emerald-800 uppercase mt-1">
+          <span class="text-[9px] font-bold tracking-[0.24em] text-saffron-800 uppercase mt-1">
             Global Agro Exports • India
           </span>
         </div>
       </a>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
-        <a href="#/products" class="hover:text-emerald-800 transition">All Commodities</a>
-        <a href="#/spices" class="hover:text-emerald-800 transition">Spices</a>
-        <a href="#/dry-fruits" class="hover:text-emerald-800 transition">Dry Fruits & Makhana</a>
-        <a href="#/dehydrated" class="hover:text-emerald-800 transition">Dehydrated Onion</a>
-        <a href="#rfq" class="hover:text-emerald-800 transition">Container RFQ</a>
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center space-x-7 text-xs font-bold text-stone-700 uppercase tracking-wider">
+        <a href="#/" class="hover:text-saffron-600 transition">Home</a>
+        <a href="#/products" class="hover:text-saffron-600 transition">All Commodities</a>
+        <a href="#/spices" class="hover:text-saffron-600 transition">Spices</a>
+        <a href="#/dry-fruits" class="hover:text-saffron-600 transition">Dry Fruits & Makhana</a>
+        <a href="#/dehydrated" class="hover:text-saffron-600 transition">Dehydrated Onion</a>
+        <a href="#rfq" class="hover:text-saffron-600 transition">Container RFQ</a>
       </nav>
 
       <!-- Action Button -->
       <div class="flex items-center space-x-3">
-        <a href="#rfq" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-bold text-xs text-brand-950 bg-gradient-to-r from-gold-400 to-amber-500 hover:from-gold-500 hover:to-amber-600 shadow-md shadow-amber-500/20 transition transform active:scale-95">
-          <span>Request Bulk Quote</span>
-          <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        <a href="#rfq" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-saffron-600 via-saffron-500 to-saffron-700 hover:from-saffron-700 hover:to-saffron-800 shadow-md shadow-saffron-600/25 transition transform active:scale-95">
+          <span>Request Proforma RFQ</span>
+          <svg class="w-3.5 h-3.5 ml-1.5 text-amberGold-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- MAIN ROUTED CONTAINER -->
   <main id="app-root" class="flex-1">
-    <!-- Rendered dynamically by JavaScript Router -->
+    <!-- Rendered dynamically by JavaScript Single Page Router -->
   </main>
 
-  <!-- RFQ SECTION (Common Footer Anchor) -->
-  <section id="rfq" class="py-16 sm:py-20 bg-white border-t border-slate-200">
+  <section id="rfq" class="py-16 sm:py-20 bg-white border-t border-stone-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-gradient-to-br from-brand-950 via-[#07382d] to-brand-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
-        <div class="absolute right-0 top-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="bg-gradient-to-br from-obsidian-950 via-stone-900 to-saffron-950 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden border border-saffron-900/40">
+        <div class="absolute right-0 top-0 w-96 h-96 bg-saffron-600/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Left Value Proposition -->
           <div class="lg:col-span-5 space-y-5">
-            <span class="text-xs font-bold text-gold-300 uppercase tracking-widest bg-gold-500/20 px-3 py-1 rounded-full border border-gold-400/30">
-              Direct Trade Desk
+            <span class="text-xs font-bold text-amberGold-400 uppercase tracking-widest bg-saffron-500/20 px-3 py-1 rounded-full border border-saffron-500/30">
+              Direct International Trade Desk
             </span>
             <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-white leading-tight">
               Request an Export Proforma Quote
             </h2>
-            <p class="text-sm text-emerald-100/80 leading-relaxed font-light">
-              Connect directly with our export logistics desk. We provide comprehensive FOB (Mundra / Nhava Sheva JNPT), CFR, or CIF quotation sheets tailored to your destination discharge port.
+            <p class="text-xs sm:text-sm text-stone-300 leading-relaxed font-light">
+              Connect directly with our port logistics desk. We provide prompt FOB (Mundra / Nhava Sheva JNPT), CFR, or CIF quotation sheets tailored to your destination discharge port.
             </p>
 
-            <div class="space-y-3 pt-2 text-xs text-slate-200 font-medium">
+            <div class="space-y-3 pt-2 text-xs text-stone-300 font-medium">
               <div class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-gold-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                <svg class="w-4 h-4 text-saffron-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                 <span>Full Container Loads (20ft / 40ft HQ FCL) & LCL Pallet Loads</span>
               </div>
               <div class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-gold-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span>Private Labeling & Customized Packaging for Supermarket Chains</span>
+                <svg class="w-4 h-4 text-saffron-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                <span>Private Labeling & Customized Supermarket Pouch Packaging</span>
               </div>
               <div class="flex items-center gap-2">
-                <svg class="w-4 h-4 text-gold-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span>Lab Test Certificate (Eurofins / SGS) with Phytosanitary verification</span>
+                <svg class="w-4 h-4 text-saffron-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                <span>Eurofins / SGS Laboratory Certificates with Phytosanitary clearance</span>
               </div>
             </div>
 
-            <!-- Direct Contact Card -->
-            <div class="bg-white/10 backdrop-blur rounded-2xl p-4 border border-white/10 space-y-1.5 mt-4 text-xs">
-              <p class="text-gold-300 font-bold uppercase tracking-wider text-[10px]">Head Office & Trade Desk</p>
+            <!-- Trade Desk Credentials -->
+            <div class="bg-white/10 backdrop-blur rounded-2xl p-4 border border-white/10 space-y-1 mt-4 text-xs">
+              <p class="text-saffron-400 font-bold uppercase tracking-wider text-[10px]">Head Office & Trade Desk</p>
               <p class="font-bold text-white text-sm">VEEJE FOODS PRIVATE LIMITED</p>
-              <p class="text-slate-300">India: +91 99999 99999 • Email: exports@veejefoods.com</p>
+              <p class="text-stone-300">India: +91 99999 99999 • Email: exports@veejefoods.com</p>
             </div>
           </div>
 
-          <!-- Right Form Container -->
-          <div class="lg:col-span-7 bg-white text-slate-900 rounded-2xl p-6 sm:p-8 shadow-xl">
+          <!-- Right Interactive RFQ Form -->
+          <div class="lg:col-span-7 bg-white text-stone-900 rounded-2xl p-6 sm:p-8 shadow-xl">
             <form id="rfq-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Company / Importer Name *</label>
-                  <input type="text" id="buyer-name" required placeholder="e.g. Al-Noor General Trading LLC" class="w-full text-xs p-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-slate-50">
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Company / Importer Name *</label>
+                  <input type="text" id="buyer-name" required placeholder="e.g. Al-Noor General Trading LLC" class="w-full text-xs p-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-saffron-600 bg-stone-50">
                 </div>
                 <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Destination Country & Port *</label>
-                  <input type="text" id="destination-port" required placeholder="e.g. Jebel Ali, Dubai / Rotterdam" class="w-full text-xs p-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-slate-50">
-                </div>
-              </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Corporate Email *</label>
-                  <input type="email" id="buyer-email" required placeholder="purchase@company.com" class="w-full text-xs p-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-slate-50">
-                </div>
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">WhatsApp / Direct Phone *</label>
-                  <input type="tel" id="buyer-phone" required placeholder="+971 50 123 4567" class="w-full text-xs p-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-slate-50">
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Destination Discharge Port *</label>
+                  <input type="text" id="destination-port" required placeholder="e.g. Jebel Ali, Dubai / Rotterdam" class="w-full text-xs p-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-saffron-600 bg-stone-50">
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Commodity Required *</label>
-                  <select id="rfq-commodity" class="w-full text-xs p-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-slate-50 font-medium">
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Corporate Email *</label>
+                  <input type="email" id="buyer-email" required placeholder="procurement@company.com" class="w-full text-xs p-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-saffron-600 bg-stone-50">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">WhatsApp / Phone *</label>
+                  <input type="tel" id="buyer-phone" required placeholder="+971 50 123 4567" class="w-full text-xs p-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-saffron-600 bg-stone-50">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Commodity Required *</label>
+                  <select id="rfq-commodity" class="w-full text-xs p-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-saffron-600 bg-stone-50 font-medium">
                     <option value="Indian Cumin Seeds (Jeera)">Indian Cumin Seeds (Jeera) - 99.5%</option>
-                    <option value="Natural & Hulled Sesame Seeds">Natural / Hulled Sesame Seeds (Til)</option>
-                    <option value="Turmeric Finger & Powder (Haldi)">Turmeric Finger & Powder (Salem / Nizamabad)</option>
-                    <option value="Guntur S17 Teja Red Chilli">Guntur S17 Teja Red Chilli</option>
+                    <option value="Dehydrated Red & White Onion Powder">Dehydrated Red & White Onion Powder</option>
+                    <option value="Jumbo Phool Makhana (Fox Nuts)">Jumbo Phool Makhana (5-6 Soota)</option>
                     <option value="Compounded Hing (Asafoetida)">Compounded Hing (Asafoetida)</option>
-                    <option value="Jumbo Makhana (Fox Nuts)">Jumbo Phool Makhana (Fox Nuts 5-6 Soota)</option>
                     <option value="Premium Cashew Nuts (Kaju W240/W320)">Premium Cashew Nuts (Kaju W240 / W320)</option>
-                    <option value="California & Mamra Almonds (Badam)">California & Mamra Almonds (Badam)</option>
-                    <option value="Dehydrated White & Red Onion Powder">Dehydrated White & Red Onion Powder</option>
-                    <option value="1121 XXL Basmati Rice">1121 XXL Basmati Rice (Aged)</option>
-                    <option value="Malabar Black Pepper (Tellicherry MG1)">Malabar Black Pepper (Tellicherry MG1)</option>
+                    <option value="Salem Turmeric Finger (Haldi)">Salem Turmeric Finger (Double Polished)</option>
+                    <option value="Natural & Hulled Sesame Seeds (Til)">Natural & Hulled Sesame Seeds (Til 99.95%)</option>
                   </select>
                 </div>
                 <div>
-                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Container Volume *</label>
-                  <select id="rfq-quantity" class="w-full text-xs p-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-slate-50 font-medium">
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Container Volume *</label>
+                  <select id="rfq-quantity" class="w-full text-xs p-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-saffron-600 bg-stone-50 font-medium">
                     <option value="1x 20ft FCL Container">1x 20ft FCL Container</option>
                     <option value="1x 40ft HQ FCL Container">1x 40ft HQ FCL Container</option>
                     <option value="Multiple Containers (Annual Contract)">Multiple Containers (Monthly Contract)</option>
-                    <option value="Trial Order (5 to 10 MT)">Trial Order (5 to 10 MT)</option>
+                    <option value="Trial Pallet Order (5 to 10 MT)">Trial Order (5 to 10 MT)</option>
                   </select>
                 </div>
               </div>
 
               <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Packaging & Specification Details</label>
-                <textarea id="rfq-notes" rows="3" placeholder="State your target packaging (e.g., 25kg PP bags, 50kg jute bags, or 500g retail pouches) and required Incoterm (FOB Mundra, CIF Jebel Ali, etc.)..." class="w-full text-xs p-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 bg-slate-50"></textarea>
+                <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Packaging & Specification Details</label>
+                <textarea id="rfq-notes" rows="3" placeholder="Specify your desired packaging (e.g., 25kg PP bags, 50kg jute bags, or 500g retail pouches) and required Incoterm (FOB Mundra, CIF Jebel Ali, etc.)..." class="w-full text-xs p-3 rounded-xl border border-stone-300 focus:outline-none focus:ring-2 focus:ring-saffron-600 bg-stone-50"></textarea>
               </div>
 
               <div class="pt-2 flex flex-col sm:flex-row gap-3">
-                <button type="submit" class="flex-1 py-3.5 px-6 rounded-xl font-bold text-xs text-white bg-brand-950 hover:bg-brand-900 transition flex items-center justify-center gap-2 shadow-md">
+                <button type="submit" class="flex-1 py-3.5 px-6 rounded-xl font-bold text-xs text-white bg-saffron-600 hover:bg-saffron-700 shadow-md shadow-saffron-600/30 transition flex items-center justify-center gap-2">
                   <span>Generate Official Proforma RFQ</span>
-                  <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  <svg class="w-4 h-4 text-amberGold-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </button>
-                <button type="button" onclick="sendViaWhatsApp()" class="py-3.5 px-5 rounded-xl font-bold text-xs text-emerald-950 bg-emerald-100 hover:bg-emerald-200 border border-emerald-300 transition flex items-center justify-center gap-2">
-                  <svg class="w-4 h-4 text-emerald-700" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                <button type="button" onclick="sendViaWhatsApp()" class="py-3.5 px-5 rounded-xl font-bold text-xs text-saffron-950 bg-saffron-100 hover:bg-saffron-200 border border-saffron-300 transition flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4 text-saffron-700" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
                   <span>Direct WhatsApp RFQ</span>
                 </button>
               </div>
             </form>
           </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-white border-t border-slate-200 mt-auto text-xs text-slate-500 py-12">
+  <footer class="bg-white border-t border-stone-200 mt-auto text-xs text-stone-500 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        
+        <!-- Col 1: Brand -->
         <div class="space-y-3">
-          <div class="flex items-center space-x-2">
-            <div class="w-8 h-8 rounded-lg bg-brand-950 flex items-center justify-center text-gold-400 font-cinzel font-bold text-sm">
-              V
+          <div class="flex items-center space-x-2.5">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center">
+              <svg viewBox="0 0 100 100" fill="none" class="w-full h-full">
+                <rect x="5" y="5" width="90" height="90" rx="30" fill="#141210" stroke="#f59e0b" stroke-width="2.5"/>
+                <path d="M 46 76 C 40 64, 27 48, 28 32 C 34 38, 43 56, 46 76 Z" fill="#ea580c"/>
+                <path d="M 46 76 C 52 62, 62 44, 69 28 C 67 36, 56 58, 46 76 Z" fill="#f59e0b"/>
+                <circle cx="45" cy="46" r="3.8" fill="#f59e0b"/>
+                <circle cx="58" cy="52" r="3.2" fill="#fbbf24"/>
+                <circle cx="64" cy="38" r="3.6" fill="#f59e0b"/>
+              </svg>
             </div>
-            <span class="font-cinzel font-bold text-lg text-brand-950">VEEJE FOODS</span>
+            <span class="font-cinzel font-bold text-lg text-stone-900">VEEJE FOODS</span>
           </div>
-          <p class="text-xs text-slate-500 leading-relaxed font-normal">
-            Premier Indian processor, sortex miller, and bulk exporter of export-compliant spices, oilseeds, dry fruits, and agro commodities.
+          <p class="text-xs text-stone-500 leading-relaxed font-normal">
+            Premier Indian processor, sortex miller, and bulk exporter of export-grade spices, oilseeds, dry fruits, and dehydrated onion powder.
           </p>
-          <div class="text-[11px] font-mono text-emerald-800 font-semibold">
+          <div class="text-[11px] font-mono text-saffron-800 font-semibold">
             IEC: 0524918231 • GSTIN: 27AABCV1234F1Z
           </div>
         </div>
 
+        <!-- Col 2: Top Spices -->
         <div class="space-y-2">
-          <h4 class="font-cinzel font-bold text-slate-900 text-sm">Top Export Spices</h4>
-          <ul class="space-y-1.5 text-xs text-slate-600">
-            <li><a href="#/product/cumin-seeds" class="hover:text-emerald-800 transition">Indian Cumin Seeds (Jeera)</a></li>
-            <li><a href="#/product/turmeric" class="hover:text-emerald-800 transition">Salem Turmeric Finger & Powder</a></li>
-            <li><a href="#/product/red-chilli" class="hover:text-emerald-800 transition">Guntur S17 Teja Red Chilli</a></li>
-            <li><a href="#/product/hing" class="hover:text-emerald-800 transition">Compounded Hing (Asafoetida)</a></li>
-            <li><a href="#/product/black-pepper" class="hover:text-emerald-800 transition">Malabar Garbled Black Pepper</a></li>
+          <h4 class="font-cinzel font-bold text-stone-900 text-sm">Export Spices</h4>
+          <ul class="space-y-1.5 text-xs text-stone-600">
+            <li><a href="#/product/cumin-seeds" class="hover:text-saffron-700 transition">Indian Cumin Seeds (Jeera)</a></li>
+            <li><a href="#/product/turmeric-finger" class="hover:text-saffron-700 transition">Salem Turmeric Finger (Haldi)</a></li>
+            <li><a href="#/product/hing" class="hover:text-saffron-700 transition">Compounded Hing (Asafoetida)</a></li>
+            <li><a href="#/product/sesame-seeds" class="hover:text-saffron-700 transition">Hulled Sesame Seeds (Til 99.95%)</a></li>
           </ul>
         </div>
 
+        <!-- Col 3: Agro & Dry Fruits -->
         <div class="space-y-2">
-          <h4 class="font-cinzel font-bold text-slate-900 text-sm">Dry Fruits & Agro</h4>
-          <ul class="space-y-1.5 text-xs text-slate-600">
-            <li><a href="#/product/makhana" class="hover:text-emerald-800 transition">Jumbo Phool Makhana (Fox Nuts)</a></li>
-            <li><a href="#/product/cashews-kaju" class="hover:text-emerald-800 transition">Export Cashew Nuts (Kaju W240/320)</a></li>
-            <li><a href="#/product/almonds-badam" class="hover:text-emerald-800 transition">Premium California Almonds</a></li>
-            <li><a href="#/product/sesame-seeds" class="hover:text-emerald-800 transition">Natural & Hulled Sesame Seeds</a></li>
-            <li><a href="#/product/onion-powder" class="hover:text-emerald-800 transition">Dehydrated Onion Powder & Flakes</a></li>
+          <h4 class="font-cinzel font-bold text-stone-900 text-sm">Agro & Dry Fruits</h4>
+          <ul class="space-y-1.5 text-xs text-stone-600">
+            <li><a href="#/product/phool-makhana" class="hover:text-saffron-700 transition">Jumbo Phool Makhana (Fox Nuts)</a></li>
+            <li><a href="#/product/cashew-nuts" class="hover:text-saffron-700 transition">Cashew Nuts (Kaju W240/320)</a></li>
+            <li><a href="#/product/onion-powder" class="hover:text-saffron-700 transition">Dehydrated Onion Powder</a></li>
           </ul>
         </div>
 
+        <!-- Col 4: Port Departure Gates -->
         <div class="space-y-2">
-          <h4 class="font-cinzel font-bold text-slate-900 text-sm">Port Departure Gates</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Direct container stuffing and seal compliance at:<br>
+          <h4 class="font-cinzel font-bold text-stone-900 text-sm">Port Departure Gates</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Direct stuffing and seal compliance at:<br>
             • <b>Mundra Port (INMUN1)</b> — Gujarat<br>
             • <b>Nhava Sheva / JNPT (INNSA1)</b> — Mumbai<br>
             • <b>Kandla Port (INIXY1)</b> — Gujarat
           </p>
-          <p class="text-[11px] text-emerald-800 font-bold pt-1">
-            24/7 International Trade Desk: exports@veejefoods.com
+          <p class="text-[11px] text-saffron-800 font-bold pt-1">
+            24/7 International Desk: exports@veejefoods.com
           </p>
         </div>
+
       </div>
 
-      <div class="border-t border-slate-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div class="border-t border-stone-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
         <p>© 2026 Veeje Foods Private Limited. All international export rights reserved.</p>
-        <div class="flex items-center space-x-4 text-slate-500 font-medium">
+        <div class="flex items-center space-x-4 text-stone-500 font-medium">
           <span>APEDA Registered</span>
           <span>•</span>
           <span>FSSAI Certified</span>
@@ -327,13 +365,13 @@
   </footer>
 
   <!-- Toast Notification Box -->
-  <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-brand-950 text-white px-5 py-3.5 rounded-xl shadow-2xl border border-gold-400/40 text-xs font-semibold flex items-center gap-2 pointer-events-none">
-    <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+  <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-obsidian-950 text-white px-5 py-3.5 rounded-xl shadow-2xl border border-saffron-500/40 text-xs font-semibold flex items-center gap-2 pointer-events-none">
+    <span class="w-2 h-2 rounded-full bg-saffron-400"></span>
     <span id="toast-text">Notification</span>
   </div>
 
   <script>
-    // Comprehensive Database of Top Indian Agro Export Commodities
+    // Strict Database of the 7 Requested Commodities using Your Exact Photos & SEO Specs
     const COMMODITIES = [
       {
         id: "cumin-seeds",
@@ -342,13 +380,12 @@
         hindiName: "जीरा (Jeera)",
         botanicalName: "Cuminum cyminum",
         hsCode: "090931 / 090932",
-        origin: "Unjha (Gujarat) & Rajasthan",
+        origin: "Unjha (Gujarat) & Nagaur (Rajasthan)",
         tag: "99.5% Sortex Clean",
-        tagColor: "emerald",
-        image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "Machine-cleaned and double sortex graded Indian cumin seeds with intense warm aroma and high natural essential oil content.",
+        image: "images/cumin-seeds.jpg",
+        fallbackImage: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=80",
+        shortDesc: "Machine-cleaned and double sortex graded Indian cumin seeds with intense warm aroma and high natural volatile oil content.",
         seoTitle: "Export Quality Indian Cumin Seeds (Jeera) - 99.5% Sortex Clean Exporter",
-        seoDesc: "Leading supplier of premium Indian cumin seeds from Gujarat and Rajasthan. Rigorous pesticide testing, ETO/Steam sterilization, <9% moisture, 2.5% min volatile oil.",
         specs: [
           { key: "Purity Grade", val: "99.5% Machine Cleaned / 99% Sortex" },
           { key: "Volatile Essential Oil", val: "2.5% to 3.2% Min" },
@@ -359,104 +396,71 @@
           { key: "40ft HQ FCL Capacity", val: "26.0 to 27.0 Metric Tons" },
           { key: "Harvest Season", val: "February to April (Year-round stock)" }
         ],
-        details: "India produces over 70% of the world's cumin. Veeje Foods sources whole cumin directly from regulated APMC mandis in Unjha, Gujarat, and Nagaur, Rajasthan. Each batch passes through pre-cleaners, gravity separators, and optical color sorters to ensure total freedom from dust, weed seeds, and foreign materials. Available in raw whole, steam-sterilized, and micro-ground powder.",
+        details: "India produces over 70% of the world's cumin seeds. Veeje Foods sources whole cumin directly from regulated mandis in Unjha, Gujarat, and Rajasthan. Each lot undergoes multiple stage gravity separation, destoning, and electronic color sorting to guarantee total freedom from dust, weed seeds, and foreign matter. ETO/Steam sterilization options available.",
         qualityPoints: [
-          "ETO / Steam Sterilization available for EU and US FDA compliance",
-          "Aflatoxin and Ochratoxin strictly tested below European MRL thresholds",
-          "Preserved high volatile oil content gives rich flavor profile for spice blends"
+          "ETO / Steam Sterilization available for European Union & US FDA clearance",
+          "Aflatoxins and Ochratoxins tested strictly below European MRL thresholds",
+          "Retained natural volatile essential oils guarantee intense flavor profile"
         ]
       },
       {
-        id: "sesame-seeds",
-        category: "oilseeds",
-        title: "Natural & Hulled Sesame Seeds (Til)",
-        hindiName: "सफेद तिल (White Til)",
-        botanicalName: "Sesamum indicum",
-        hsCode: "120740",
-        origin: "Gujarat & Saurashtra",
-        tag: "99.95% Auto-Sortex",
-        tagColor: "emerald",
-        image: "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "Premium white hulled and natural sesame seeds with 48%+ oil content, mechanically hulled without chemicals.",
-        seoTitle: "Hulled and Natural Sesame Seeds Exporter India - 99.95% Purity",
-        seoDesc: "Direct exporter of premium Gujarat hulled sesame seeds (Auto-Sortex 99.95% and 99.99%) and natural sesame. Free Fatty Acid < 1.5%, high calcium and nutritional purity.",
+        id: "onion-powder",
+        category: "dehydrated",
+        title: "Dehydrated Red & White Onion Powder",
+        hindiName: "प्याज पाउडर (Pyaz Powder)",
+        botanicalName: "Allium cepa",
+        hsCode: "071220",
+        origin: "Mahuva (Gujarat Hub)",
+        tag: "100-Mesh A-Grade Pure",
+        image: "images/onion-powder.jpg",
+        fallbackImage: "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&w=800&q=80",
+        shortDesc: "Fluid-bed air dehydrated Mahuva red and white onion powder with potent pungency. Zero artificial anti-caking agents.",
+        seoTitle: "Indian Dehydrated Onion Powder and Flakes Exporter - Mahuva Origin",
         specs: [
-          { key: "Purity Grade", val: "99.95% & 99.99% Hulled Auto-Sortex" },
-          { key: "Oil Content", val: "48% to 52% Min" },
+          { key: "Product Forms", val: "Fine Powder (100 Mesh), Minced, Chopped & Toasted Flakes" },
+          { key: "Color Variations", val: "Deep Rosy Pink/Red & Creamy Ivory White" },
           { key: "Moisture Content", val: "< 5.0% Max" },
-          { key: "Free Fatty Acids (FFA)", val: "< 1.5% Max" },
-          { key: "Packaging Type", val: "25kg / 50kg Multi-wall Paper or Poly Bags" },
-          { key: "20ft FCL Capacity", val: "19.0 Metric Tons" },
-          { key: "40ft HQ FCL Capacity", val: "26.0 Metric Tons" },
-          { key: "Harvest Season", val: "October to December (Winter Crop)" }
+          { key: "Total Ash", val: "< 4.0% Max" },
+          { key: "Hot Water Insoluble", val: "< 15.0% Max" },
+          { key: "Packaging Type", val: "14kg to 25kg Poly Bags inside Heavy Export Cartons" },
+          { key: "20ft FCL Capacity", val: "7.5 MT (Flakes) / 14 MT (Powder)" },
+          { key: "40ft HQ Capacity", val: "17.0 MT (Flakes) / 25 MT (Powder)" }
         ],
-        details: "Veeje Foods offers both Natural White Sesame and Mechanically Hulled Sesame. Our hulling process utilizes pure water wash technology without any chemical bleaching agents, preserving the seed's wholesome nutritional profile and pearly white appearance. Ideal for bakery toppings, tahini paste, confectionery, and gourmet oil extraction.",
+        details: "Mahuva in Gujarat is world-famous for pungent sweet onions optimal for dehydration. Freshly harvested bulbs are washed, peeled, sliced, dried in continuous fluid-bed dryers, and micro-pulverized without synthetic preservatives. Indispensable for spice seasonings, ramen broths, soup bases, and industrial food manufacturing.",
         qualityPoints: [
-          "Water-hulled process (100% Chemical-free processing)",
-          "Salmonella negative / Zero microbiological contamination",
-          "Ultra-low moisture guarantees extended shelf life during oceanic voyages"
+          "Manufactured in ISO 22000 & HACCP food-safety certified drying facilities",
+          "Low microbiological counts (Standard Plate Count < 50,000 cfu/g)",
+          "Steam sterilized and gamma irradiated options available on buyer request"
         ]
       },
       {
-        id: "turmeric",
-        category: "spices",
-        title: "Turmeric Finger & Powder (Haldi)",
-        hindiName: "हल्दी (Haldi)",
-        botanicalName: "Curcuma longa",
-        hsCode: "091030",
-        origin: "Salem (Tamil Nadu) & Nizamabad",
-        tag: "Curcumin 3.0% - 5.5%",
-        tagColor: "amber",
-        image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "Deep golden yellow double-polished turmeric fingers and steam-sterilized powder with guaranteed high curcumin content.",
-        seoTitle: "Salem and Nizamabad Turmeric Finger Exporter India - High Curcumin Haldi",
-        seoDesc: "Export quality Salem and Nizamabad turmeric fingers (double polished) and fine mesh turmeric powder. High curcumin content (3% to 5.5%), zero artificial color, pesticide tested.",
+        id: "phool-makhana",
+        category: "dry-fruits",
+        title: "Jumbo Phool Makhana (Fox Nuts)",
+        hindiName: "मखाना (Makhana / Fox Nut)",
+        botanicalName: "Euryale ferox",
+        hsCode: "190410 / 210690",
+        origin: "Mithila Region, Bihar (GI Origin)",
+        tag: "5-Soota & 6-Soota Jumbo",
+        image: "images/phool-makhana.jpg",
+        fallbackImage: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
+        shortDesc: "Premium roasted water lily seeds (fox nuts), handpicked 5-soota (16-18mm) and 6-soota (19-22mm) jumbo grades. High plant protein superfood.",
+        seoTitle: "Bulk Phool Makhana Exporter India - 5 & 6 Soota Jumbo Fox Nuts",
         specs: [
-          { key: "Varieties Available", val: "Salem, Nizamabad, Rajapore & Erode" },
-          { key: "Curcumin Content", val: "3.0% to 5.5% HPLC Tested" },
-          { key: "Moisture Content", val: "< 10.0% Max" },
-          { key: "Defective / Broken", val: "< 2.0% Max" },
-          { key: "Packaging Type", val: "25kg / 50kg Jute, Polypropylene, or Bulk Bags" },
-          { key: "20ft FCL Capacity", val: "18.0 Metric Tons" },
-          { key: "Quality Formats", val: "Whole Finger (Double Polished) & Ground Powder (80-100 Mesh)" },
-          { key: "Harvest Season", val: "February to April" }
+          { key: "Size Calibration", val: "5-Soota (16-18mm) & 6-Soota (19-22mm Jumbo)" },
+          { key: "Texture Standard", val: "Pearly White, Crisp Crunchy Puff" },
+          { key: "Moisture Content", val: "< 8.0% Max (Crisp Baked Dry)" },
+          { key: "Black Seed Remnants", val: "< 0.5% Hand Picked Separation" },
+          { key: "Plant Protein", val: "9.7g per 100g serving" },
+          { key: "Packaging Type", val: "8kg to 10kg High-Density Poly Vacuum Bags" },
+          { key: "40ft HQ Capacity", val: "3.5 to 4.5 Metric Tons (Voluminous Cargo)" },
+          { key: "Harvest Season", val: "August to October" }
         ],
-        details: "Renowned worldwide for its vivid deep orange-gold hue and therapeutic curcuminoid density. We offer authentic Salem fingers prized for superior color, as well as Nizamabad and Rajapore fingers for heavy industrial and culinary grinding. Every lot is screened for lead chromate, Sudan dye, and heavy metals.",
+        details: "India's Mithila region in Bihar produces over 85% of the planet's fox nuts. Celebrated globally as an elite vegan superfood, Makhana is rich in plant calcium, magnesium, and antioxidant flavonoids. Veeje Foods grades fox nuts using multi-deck vibrating sieves and optical cleaners to ensure zero hard shells.",
         qualityPoints: [
-          "100% Free of synthetic dyes, lead chromate, or adulterants",
-          "Certified for pharmaceutical, nutraceutical, and culinary applications",
-          "Double polished fingers with minimal broken rootlets"
-        ]
-      },
-      {
-        id: "red-chilli",
-        category: "spices",
-        title: "Guntur S17 Teja Red Chilli",
-        hindiName: "लाल मिर्च (Lal Mirch)",
-        botanicalName: "Capsicum annuum",
-        hsCode: "090421 / 090422",
-        origin: "Guntur & Byadgi, India",
-        tag: "SHU: 40k to 75k",
-        tagColor: "red",
-        image: "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "Intensely pungent Guntur S17 Teja and deep-red Byadgi dried whole chillies with stems or stemless, aflatoxin-guaranteed.",
-        seoTitle: "Guntur S17 Teja Dried Red Chilli Exporter - Stemless & Whole Chilli India",
-        seoDesc: "Direct Indian bulk exporter of Guntur S17 Teja, S4 Sanam, and Byadgi red chilli. Scoville heat 40,000 to 75,000 SHU, ASTA color 50-120, aflatoxin tested for EU & GCC imports.",
-        specs: [
-          { key: "Grades Supplied", val: "S17 Teja, Sanam S4, Byadgi & 334" },
-          { key: "Heat Index (SHU)", val: "40,000 to 75,000 SHU (Teja) / 15,000 (Byadgi)" },
-          { key: "Color Value (ASTA)", val: "50 to 90 ASTA (Teja) / 120+ ASTA (Byadgi)" },
-          { key: "Moisture Content", val: "< 11.0% Max" },
-          { key: "Stem Type", val: "Stemless (100% De-stemmed) or With Stem" },
-          { key: "Packaging Type", val: "4.5kg / 10kg / 25kg Jute or Cartoon Boxes" },
-          { key: "40ft HQ Capacity", val: "14.0 Metric Tons" },
-          { key: "Harvest Season", val: "January to April" }
-        ],
-        details: "Andhra Pradesh's Guntur region is the world's undisputed capital for high-pungency red chillies. Veeje Foods provides rigorous cold-storage conditioning to retain natural fiery red gloss and aroma. Each shipment undergoes thorough aflatoxin B1/G1 testing to satisfy strict European, American, and Middle Eastern import regulations.",
-        qualityPoints: [
-          "Zero Sudan I-IV dyes; certified lab tested",
-          "Aflatoxin tested well below 5 ppb for EU / US FDA parameters",
-          "Consistent heat pungency and moisture controlled stuffing"
+          "Authentic GI-tagged Bihar harvest with direct farm-gate sourcing",
+          "100% Non-fried natural puffing process with zero added chemicals",
+          "Vacuum barrier packaging prevents atmospheric humidity absorption"
         ]
       },
       {
@@ -468,61 +472,29 @@
         hsCode: "130190",
         origin: "Indian Processing & Compounding Hubs",
         tag: "Super Concentrated Aroma",
-        tagColor: "gold",
-        image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "Pure compounding of natural gum resin asafoetida with edible wheat starch or gluten-free rice flour, delivering powerful umami aroma.",
-        seoTitle: "Export Compounded Hing Asafoetida Exporter India - Powder & Granules",
-        seoDesc: "Wholesale export of premium compounded Hing (Asafoetida) in crystal lumps, granular, and fine powder. Pure sulfur aroma, zero artificial fillers, retail and institutional bulk packing.",
+        image: "images/hing.jpg",
+        fallbackImage: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
+        shortDesc: "Compounded natural gum resin asafoetida with edible wheat starch or gluten-free rice flour, releasing warm garlicky notes when tempered.",
+        seoTitle: "Compounded Hing Asafoetida Exporter India - Powder & Granules",
         specs: [
-          { key: "Physical Forms", val: "Fine Powder, Coarse Granules, and Lumps" },
+          { key: "Physical Formats", val: "Fine Powder, Coarse Granules & Solid Lumps" },
           { key: "Base Carriers", val: "Edible Wheat Flour (Standard) or Rice Flour (Gluten-Free)" },
-          { key: "Gum Resin Content", val: "Compounded 30% to 50% Active Resin" },
+          { key: "Active Gum Resin", val: "30% to 50% Active Resin Compounding" },
           { key: "Total Ash", val: "< 3.0% Max" },
           { key: "Moisture Content", val: "< 6.0% Max" },
           { key: "Packaging Formats", val: "50g, 100g, 500g, 1kg Food Jars / 25kg Drums" },
           { key: "Shelf Life", val: "24 Months in airtight sealed containment" },
-          { key: "Export Markets", val: "GCC, UK, USA, Canada, Malaysia, Singapore" }
+          { key: "Target Markets", val: "GCC, UK, USA, Canada, Malaysia, Singapore" }
         ],
-        details: "Often called 'food of the gods' or devil's dung due to its pungent raw sulfur aroma that blossoms into smooth garlicky-onion notes when cooked in oil. Veeje Foods manufactures compounded hing under sanitized, temperature-regulated facilities adhering to FSSAI and international spice compounding codes.",
+        details: "Often termed 'food of the gods', Hing imparts a distinctive umami aroma that mirrors cooked garlic and leeks without using alliums. Veeje Foods manufactures compounded hing under hygienic, temperature-controlled facilities strictly adhering to FSSAI and international food spice regulations.",
         qualityPoints: [
-          "Microbial count strictly controlled; zero synthetic flavor additives",
-          "Strong aroma concentration requires only a pinch for commercial kitchen prep",
-          "Custom private-label packaging in vacuum jars for supermarket shelves"
+          "Rigid microbial count control with zero synthetic flavoring additives",
+          "High active resin concentration requires only a pinch for institutional cooking",
+          "Custom private-label packaging in vacuum jars for international supermarkets"
         ]
       },
       {
-        id: "makhana",
-        category: "dry-fruits",
-        title: "Jumbo Phool Makhana (Fox Nuts)",
-        hindiName: "मखाना (Makhana / Fox Nut)",
-        botanicalName: "Euryale ferox",
-        hsCode: "190410 / 210690",
-        origin: "Mithila Region, Bihar (GI Origin)",
-        tag: "5-Soota & 6-Soota Jumbo",
-        tagColor: "emerald",
-        image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "Superfood roasted water lily seeds (fox nuts), handpicked 5-soota and 6-soota grades. High protein, gluten-free, and pesticide-free.",
-        seoTitle: "Bulk Phool Makhana Exporter India - 5 Soota Jumbo Fox Nuts Supplier",
-        seoDesc: "Direct exporter of handpicked jumbo Phool Makhana (Fox Nuts / Gorgon Nuts) from Bihar, India. Grade 5-Soota & 6-Soota (18mm+), low moisture, non-GMO, high plant protein.",
-        specs: [
-          { key: "Size Grades", val: "5-Soota (16-18mm) & 6-Soota (19-22mm Jumbo)" },
-          { key: "Color & Texture", val: "Pearly White, Crisp Crunchy Puff" },
-          { key: "Moisture Content", val: "< 8.0% Max (Crisp Baked Dry)" },
-          { key: "Hard Seed Content", val: "< 0.5% Hand Picked Separation" },
-          { key: "Protein Content", val: "9.7g per 100g serving" },
-          { key: "Packaging Type", val: "8kg to 10kg High-Density Poly Vacuum Bags" },
-          { key: "40ft HQ Capacity", val: "3.5 to 4.5 Metric Tons (Voluminous Cargo)" },
-          { key: "Harvest Season", val: "August to October" }
-        ],
-        details: "India's Mithila region produces over 85% of the planet's lotus seed fox nuts. Known globally as an elite vegan superfood, Makhana is rich in plant calcium, magnesium, and antioxidant flavonoids. Veeje Foods grades fox nuts using multistage vibrating screens and optical cleaners to remove black seed shell remnants.",
-        qualityPoints: [
-          "GI-tagged authentic Bihar origin direct sourcing",
-          "Zero oil, non-fried natural puffing process",
-          "High volume-to-weight export cargo stuffing with heavy vacuum barrier protection"
-        ]
-      },
-      {
-        id: "cashews-kaju",
+        id: "cashew-nuts",
         category: "dry-fruits",
         title: "Export Cashew Nuts (Kaju W240 & W320)",
         hindiName: "काजू (Kaju)",
@@ -530,151 +502,88 @@
         hsCode: "080132",
         origin: "Goa, Konkan & Mangalore",
         tag: "Grade W240 / W320 White Wholes",
-        tagColor: "amber",
-        image: "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "Golden-white whole cashews processed in modern steam-peeling mills. Available in king jumbo W180, standard W240, and commercial W320.",
+        image: "images/cashew-nuts.jpg",
+        fallbackImage: "https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80",
+        shortDesc: "Pearly-white whole cashew kernels processed in modern steam-peeling mills. Available in jumbo W180, standard W240, and commercial W320.",
         seoTitle: "Indian Cashew Nuts Exporter - Wholesale Kaju W180 W240 W320",
-        seoDesc: "Direct bulk supplier of premium Indian processed cashew nuts. White Wholes W180, W240, W320, splits, and large pieces. Vacuum tin packing with nitrogen flushing.",
         specs: [
-          { key: "Grades Supplied", val: "W180 (King), W240, W320 & JH (Splits)" },
-          { key: "Color Standard", val: "White Wholes (Uniform light cream)" },
+          { key: "Grades Supplied", val: "W180 (King Jumbo), W240, W320 & JH (Splits)" },
+          { key: "Color Standard", val: "White Wholes (Uniform light cream kernel)" },
           { key: "Moisture Content", val: "< 4.5% Max" },
-          { key: "Broken / Infestation", val: "Zero live insects; < 1.0% fragments" },
-          { key: "Packaging Format", val: "10kg / 11.34kg (25 lbs) Vacuum Pouches / Tins" },
+          { key: "Broken / Fragments", val: "< 1.0% Broken pieces" },
+          { key: "Packaging Format", val: "10kg / 11.34kg (25 lbs) Vacuum Pouches / Metal Tins" },
           { key: "20ft FCL Capacity", val: "15.8 Metric Tons (700 Cartons of 50 lbs)" },
-          { key: "Nitrogen Flush", val: "99.8% Nitrogen Purge for 18-month Freshness" }
+          { key: "Nitrogen Flushing", val: "99.8% Nitrogen Purge for 18-month Freshness" }
         ],
         details: "Indian cashews are famed worldwide for their rich buttery sweetness and firm crunch compared to other origins. Veeje Foods handles premium cashew kernels processed through automated electronic sorting machines, infrared grading, and hygienic nitrogen-flushed carton packaging.",
         qualityPoints: [
           "CEPCI (Cashew Export Promotion Council of India) certified quality",
-          "AFI (Association of Food Industries) grade compliant",
-          "Vacuum flexi-pack with nitrogen flush prevents oxidation and rancidity"
+          "AFI (Association of Food Industries) grade compliant specifications",
+          "Vacuum flexi-pack with nitrogen flush prevents rancidity and oxidation"
         ]
       },
       {
-        id: "almonds-badam",
-        category: "dry-fruits",
-        title: "Premium Almonds (Badam)",
-        hindiName: "बादाम (Badam)",
-        botanicalName: "Prunus dulcis",
-        hsCode: "080212",
-        origin: "Kashmir & Selected Global Orchards",
-        tag: "Nonpareil & Mamra Grade",
-        tagColor: "amber",
-        image: "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "Selected whole shelled almond kernels, rich in natural vitamin E, heart-healthy monounsaturated fats, and dietary fiber.",
-        seoTitle: "Bulk Almonds Badam Exporter - Wholesale Inshell and Shelled Almonds",
-        seoDesc: "Exporter of select whole almond kernels (Nonpareil, Carmel, and indigenous Mamra selections). Uniform kernel count, zero chemical polish, high oleic oil content.",
-        specs: [
-          { key: "Kernels Per Ounce", val: "20/22, 23/25, 27/30 Counts" },
-          { key: "Moisture Content", val: "< 5.5% Max" },
-          { key: "Foreign Material", val: "< 0.1% Max" },
-          { key: "Chipped & Scratched", val: "< 3.0% Max" },
-          { key: "Packaging Type", val: "10kg / 25kg Multi-layer Kraft or Poly Bags" },
-          { key: "20ft FCL Capacity", val: "18.0 Metric Tons" },
-          { key: "Shelf Life", val: "18 Months in cool, dry warehousing" }
-        ],
-        details: "Veeje Foods supplies top-grade shelled sweet almond kernels tailored for international confectioners, chocolatiers, snack brands, and dairy re-packers. Carefully inspected for moisture stabilization and sealed in odor-barrier cartons.",
-        qualityPoints: [
-          "Zero artificial glazes or petroleum polishing",
-          "Strict sizing calibration ensures uniform roasting and processing",
-          "Purity and insect-free guarantee verified by port phytosanitary officers"
-        ]
-      },
-      {
-        id: "onion-powder",
-        category: "dehydrated",
-        title: "Dehydrated White & Red Onion Powder",
-        hindiName: "प्याज पाउडर (Pyaz Powder)",
-        botanicalName: "Allium cepa",
-        hsCode: "071220",
-        origin: "Mahuva (Gujarat Hub)",
-        tag: "100-Mesh A-Grade Pure",
-        tagColor: "emerald",
-        image: "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "Air-dehydrated Mahuva white and red onion powder and flakes with intense pungent flavor. Zero anti-caking adulterants.",
-        seoTitle: "Indian Dehydrated Onion Powder and Flakes Exporter - Mahuva Origin",
-        seoDesc: "Leading exporter of high-grade dehydrated white onion powder, minced, chopped, and toasted flakes from Mahuva, Gujarat. Pure aroma, <5% moisture, 100-mesh fine powder.",
-        specs: [
-          { key: "Product Forms", val: "Fine Powder (100 Mesh), Minced, Chopped & Flakes (Kibbled)" },
-          { key: "Color Variations", val: "Creamy White & Deep Rosy Pink/Red" },
-          { key: "Moisture Content", val: "< 5.0% Max" },
-          { key: "Total Ash", val: "< 4.0% Max" },
-          { key: "Hot Water Insoluble", val: "< 15.0% Max" },
-          { key: "Packaging Type", val: "14kg to 25kg Poly Bags inside Heavy Cartons" },
-          { key: "20ft FCL Capacity", val: "7.5 MT (Flakes) / 14 MT (Powder)" },
-          { key: "40ft HQ Capacity", val: "17.0 MT (Flakes) / 25 MT (Powder)" }
-        ],
-        details: "Mahuva in Gujarat is globally celebrated for producing sweet, pungent onions optimal for dehydration. Fresh bulbs are thoroughly washed, peeled, sliced, dried in continuous fluid-bed hot air tunnels, and milled without artificial anti-caking compounds or coloring agents. Indispensable for dry seasoning rubs, soup mixes, ketchup factories, and ramen broths.",
-        qualityPoints: [
-          "Manufactured under ISO 22000 & HACCP food safety compliant dryers",
-          "Low microbiological counts (Standard Plate Count < 50,000 cfu/g)",
-          "Steam sterilization / Irradiation option available upon buyer request"
-        ]
-      },
-      {
-        id: "basmati-rice",
-        category: "grains",
-        title: "1121 XXL Basmati Rice (Aged)",
-        hindiName: "1121 बासमती चावल",
-        botanicalName: "Oryza sativa",
-        hsCode: "100630",
-        origin: "Punjab & Haryana (Himalayan Foothills)",
-        tag: "8.35mm+ Average Grain",
-        tagColor: "gold",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "World's longest grain aromatic Basmati rice. Aged to perfection, expands to over 22mm when cooked with zero stickiness.",
-        seoTitle: "1121 Steam and Golden Sella Basmati Rice Exporter India",
-        seoDesc: "Direct exporter of aged 1121 XXL Basmati Rice (Steam, Creamy Sella, Golden Sella). Average grain length 8.35mm+, 95% purity, zero broken grain, 1kg to 50kg bag packing.",
-        specs: [
-          { key: "Average Grain Length", val: "8.35mm to 8.40mm Raw" },
-          { key: "Elongation Ratio", val: "2.5x to 22mm+ upon cooking" },
-          { key: "Purity Grade", val: "95% Pure Traditional Basmati" },
-          { key: "Broken Grain", val: "< 1.0% Max" },
-          { key: "Moisture Content", val: "< 12.0% Max" },
-          { key: "Packaging Type", val: "1kg, 5kg, 10kg, 20kg, 50kg Non-woven / BOPP Bags" },
-          { key: "20ft FCL Capacity", val: "25.0 to 26.0 Metric Tons" }
-        ],
-        details: "Nourished by the pure snowmelt waters of the Himalayas, Indian 1121 Basmati is revered across the Middle East, Europe, and the Americas for its enchanting natural 2-acetyl-1-pyrroline aroma and elegant non-sticky separation.",
-        qualityPoints: [
-          "Minimum 12 to 24 months natural silo aging",
-          "Advanced Buhler optical sortex sort ensures zero yellow or chalky grains",
-          "Pre-shipment verification of elongation and moisture by SGS"
-        ]
-      },
-      {
-        id: "black-pepper",
+        id: "turmeric-finger",
         category: "spices",
-        title: "Malabar Garbled Black Pepper",
-        hindiName: "काली मिर्च (Kali Mirch)",
-        botanicalName: "Piper nigrum",
-        hsCode: "090411",
-        origin: "Malabar Coast, Kerala",
-        tag: "550GL & 570GL Density",
-        tagColor: "emerald",
-        image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=80",
-        shortDesc: "Tellicherry and Malabar Garbled (MG1) black pepper berries with high piperine content, robust heat, and floral woody aroma.",
-        seoTitle: "Malabar Garbled Black Pepper MG1 Exporter India - 550GL Tellicherry Pepper",
-        seoDesc: "Export quality Indian black pepper berries (MG1 / TGSEB). Piperine content 4% to 6%, bulk density 550 to 570 GL, steam sterilized and spiral cleaned for global spice millers.",
+        title: "Salem Turmeric Finger (Haldi)",
+        hindiName: "हल्दी (Haldi)",
+        botanicalName: "Curcuma longa",
+        hsCode: "091030",
+        origin: "Salem (Tamil Nadu) & Nizamabad",
+        tag: "Curcumin 3.0% - 5.5%",
+        image: "images/turmeric-finger.jpg",
+        fallbackImage: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
+        shortDesc: "Vivid deep golden-yellow single and double-polished Salem turmeric fingers with guaranteed high curcumin content.",
+        seoTitle: "Salem Turmeric Finger Exporter India - High Curcumin Haldi",
         specs: [
-          { key: "Density (GL)", val: "550 GL / 570 GL (Tellicherry Extra Bold)" },
-          { key: "Piperine Content", val: "4.5% to 6.0% Min" },
-          { key: "Volatile Essential Oil", val: "2.0% to 3.0% Min" },
-          { key: "Moisture Content", val: "< 11.5% Max" },
-          { key: "Extraneous Matter", val: "< 0.5% Max" },
-          { key: "Packaging Type", val: "25kg / 50kg Jute or Poly Bags" },
-          { key: "20ft FCL Capacity", val: "15.0 Metric Tons" }
+          { key: "Varieties Available", val: "Salem, Nizamabad, Rajapore & Erode" },
+          { key: "Curcumin Content", val: "3.0% to 5.5% HPLC Certified" },
+          { key: "Moisture Content", val: "< 10.0% Max" },
+          { key: "Defective / Broken", val: "< 2.0% Max" },
+          { key: "Packaging Type", val: "25kg / 50kg Jute, Polypropylene, or Bulk Bags" },
+          { key: "20ft FCL Capacity", val: "18.0 Metric Tons" },
+          { key: "Quality Formats", val: "Whole Finger (Double Polished) & Ground Powder" },
+          { key: "Harvest Season", val: "February to April" }
         ],
-        details: "Harvested from the lush hills of Kerala's spice coast, Indian black pepper is celebrated as the 'King of Spices'. Veeje Foods supplies thoroughly garbled, pinhead-free berries cleaned with spiral separators and destoners.",
+        details: "Renowned worldwide for its deep orange-gold hue and therapeutic curcuminoid density. We offer authentic Salem fingers prized for superior color, as well as Nizamabad and Rajapore fingers for heavy industrial grinding. Every lot is screened for lead chromate, Sudan dye, and heavy metals.",
         qualityPoints: [
-          "Steam washed and dried to prevent mold and moisture bloom",
-          "High essential oil and piperine concentration delivers potent pungency",
-          "Export packed for global industrial spice grinders and sausage makers"
+          "100% Free of synthetic dyes, lead chromate, or chemical polishes",
+          "Certified for pharmaceutical, nutraceutical, and culinary applications",
+          "Clean double-polished fingers with minimal broken rootlets"
+        ]
+      },
+      {
+        id: "sesame-seeds",
+        category: "oilseeds",
+        title: "Natural & Hulled Sesame Seeds (Til)",
+        hindiName: "सफेद तिल (White Til)",
+        botanicalName: "Sesamum indicum",
+        hsCode: "120740",
+        origin: "Gujarat & Saurashtra",
+        tag: "99.95% Auto-Sortex",
+        image: "images/sesame-seeds.jpg",
+        fallbackImage: "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=800&q=80",
+        shortDesc: "Premium white hulled and natural sesame seeds with 48%+ oil content, mechanically water-hulled without chemical bleach.",
+        seoTitle: "Hulled and Natural Sesame Seeds Exporter India - 99.95% Purity",
+        specs: [
+          { key: "Purity Grade", val: "99.95% & 99.99% Hulled Auto-Sortex" },
+          { key: "Oil Content", val: "48% to 52% Min" },
+          { key: "Moisture Content", val: "< 5.0% Max" },
+          { key: "Free Fatty Acids (FFA)", val: "< 1.5% Max" },
+          { key: "Packaging Type", val: "25kg / 50kg Multi-wall Paper or Poly Bags" },
+          { key: "20ft FCL Capacity", val: "19.0 Metric Tons" },
+          { key: "40ft HQ FCL Capacity", val: "26.0 Metric Tons" },
+          { key: "Harvest Season", val: "October to December (Winter Crop)" }
+        ],
+        details: "Veeje Foods offers both Natural White Sesame and Mechanically Hulled Sesame. Our hulling process utilizes pure water wash technology without chemical bleaching agents, preserving the seed's wholesome nutritional profile and pearly white appearance. Ideal for bakery toppings, tahini paste, confectionery, and gourmet oil extraction.",
+        qualityPoints: [
+          "Water-hulled process (100% Chemical-free processing)",
+          "Salmonella negative / Zero microbiological contamination",
+          "Ultra-low moisture guarantees extended shelf life during ocean voyages"
         ]
       }
     ];
 
-    // ROUTER & VIEW CONTROLLER
     function getRoute() {
       const hash = window.location.hash.replace(/^#\/?/, '');
       return hash || 'home';
@@ -711,85 +620,87 @@
         return;
       }
 
-      // Default Home Page
+      // Default Home View
       appRoot.innerHTML = renderHomePage();
     }
 
     window.addEventListener('hashchange', renderApp);
     window.addEventListener('DOMContentLoaded', renderApp);
 
-    // TEMPLATE: Home Page View
     function renderHomePage() {
       return `
         <!-- HERO SECTION -->
-        <section class="relative pt-12 pb-16 lg:pt-20 lg:pb-24 border-b border-slate-200 overflow-hidden">
+        <section class="relative pt-12 pb-16 lg:pt-20 lg:pb-24 border-b border-stone-200 overflow-hidden">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               
               <div class="lg:col-span-7 space-y-6">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100/70 border border-emerald-300 text-emerald-900 text-xs font-bold tracking-wide">
-                  <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-saffron-100 border border-saffron-300 text-saffron-900 text-xs font-bold tracking-wide">
+                  <span class="w-2 h-2 rounded-full bg-saffron-600 animate-pulse"></span>
                   GOVT. OF INDIA CERTIFIED EXPORTER • APEDA & SPICES BOARD
                 </div>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-cinzel font-black text-brand-950 leading-[1.14] tracking-tight">
-                  Pure Origin Spices, <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-800 via-emerald-700 to-amber-700 font-serif italic font-normal">Dry Fruits & Agro</span> for Global Bulk Trade.
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-cinzel font-black text-stone-900 leading-[1.14] tracking-tight">
+                  Pure Origin Spices, <span class="gold-gradient-text font-serif italic font-normal">Dry Fruits & Agro</span> for Global Bulk Supply.
                 </h1>
 
-                <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
-                  Sourcing whole and ground export spices (Cumin, Turmeric, Red Chilli, Hing), Jumbo Makhana, Premium Kaju & Almonds, and Dehydrated Onion Powder directly from farm origins for importers across 28+ countries.
+                <p class="text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl font-normal">
+                  Sourcing whole export spices (Cumin Seeds, Salem Turmeric, Compounded Hing, Hulled Sesame), Jumbo Phool Makhana, Premium Kaju, and Dehydrated Onion Powder directly from farm origins for importers across 28+ countries.
                 </p>
 
                 <!-- Core Credentials Badges -->
                 <div class="grid grid-cols-3 gap-4 pt-2 max-w-lg">
-                  <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                    <p class="text-2xl font-cinzel font-black text-brand-950">99.5%</p>
-                    <p class="text-xs text-slate-500 font-medium mt-0.5">Machine Clean Purity</p>
+                  <div class="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm">
+                    <p class="text-2xl font-cinzel font-black text-stone-900">99.5%</p>
+                    <p class="text-xs text-stone-500 font-medium mt-0.5">Machine Clean Purity</p>
                   </div>
-                  <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                    <p class="text-2xl font-cinzel font-black text-brand-950">20/40ft</p>
-                    <p class="text-xs text-slate-500 font-medium mt-0.5">FCL Container Loads</p>
+                  <div class="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm">
+                    <p class="text-2xl font-cinzel font-black text-stone-900">20/40ft</p>
+                    <p class="text-xs text-stone-500 font-medium mt-0.5">FCL Container Loads</p>
                   </div>
-                  <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                    <p class="text-2xl font-cinzel font-black text-gold-600">APEDA</p>
-                    <p class="text-xs text-slate-500 font-medium mt-0.5">Registered Exporter</p>
+                  <div class="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm">
+                    <p class="text-2xl font-cinzel font-black text-saffron-600">APEDA</p>
+                    <p class="text-xs text-stone-500 font-medium mt-0.5">Registered Exporter</p>
                   </div>
                 </div>
 
                 <!-- Buttons -->
                 <div class="flex flex-wrap items-center gap-4 pt-3">
-                  <a href="#rfq" class="px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-brand-950 hover:bg-brand-900 shadow-lg shadow-brand-950/15 transition flex items-center gap-2">
+                  <a href="#rfq" class="px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-saffron-600 hover:bg-saffron-700 shadow-lg shadow-saffron-600/20 transition flex items-center gap-2">
                     <span>Start Trade Inquiry / RFQ</span>
-                    <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <svg class="w-4 h-4 text-amberGold-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                   </a>
-                  <a href="#/products" class="px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 shadow-sm transition flex items-center gap-2">
+                  <a href="#/products" class="px-6 py-3.5 rounded-xl font-semibold text-sm text-stone-800 bg-white hover:bg-stone-50 border border-stone-300 shadow-sm transition flex items-center gap-2">
                     <span>Browse Product Pages</span>
                   </a>
                 </div>
               </div>
 
-              <!-- Visual Right -->
+              <!-- Visual Right with Brand Emblem Highlight -->
               <div class="lg:col-span-5">
-                <div class="relative rounded-3xl overflow-hidden bg-white p-3 shadow-xl border border-slate-200">
-                  <div class="rounded-2xl overflow-hidden aspect-[4/3] relative">
-                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1000&q=80" 
+                <div class="relative rounded-3xl overflow-hidden bg-white p-3 shadow-xl border border-stone-200">
+                  <div class="rounded-2xl overflow-hidden aspect-[4/3] relative bg-stone-100">
+                    <img src="images/cumin-seeds.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=80';"
                          alt="Indian export spices and commodities" 
-                         class="w-full h-full object-cover object-center transform hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6">
+                         class="w-full h-full object-cover transform hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end p-6">
                       <div class="text-white">
-                        <span class="text-[11px] uppercase tracking-widest font-bold text-gold-300 bg-black/50 backdrop-blur px-2.5 py-1 rounded">Mundra & Nhava Sheva Stuffing</span>
+                        <span class="text-[10px] uppercase tracking-widest font-bold text-amberGold-300 bg-black/60 backdrop-blur px-2.5 py-1 rounded">
+                          Mundra & Nhava Sheva Stuffing
+                        </span>
                         <p class="font-cinzel text-lg font-bold mt-1.5">Direct Farm Origin Commodities</p>
-                        <p class="text-xs text-slate-200">Certified for European Union, FDA, and GCC import compliance</p>
+                        <p class="text-xs text-stone-200 font-light">Certified for European Union, FDA, and GCC import clearance</p>
                       </div>
                     </div>
                   </div>
 
-                  <div class="bg-emerald-50/80 rounded-xl p-3 border border-emerald-200/80 shadow-sm flex items-center justify-between mt-3 text-xs">
+                  <div class="bg-saffron-50 rounded-xl p-3 border border-saffron-200/80 shadow-sm flex items-center justify-between mt-3 text-xs">
                     <div class="flex items-center space-x-2">
-                      <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></span>
-                      <span class="font-bold text-brand-950">New 2026 Crop Arrivals Ready</span>
+                      <span class="w-2.5 h-2.5 rounded-full bg-saffron-600 animate-pulse"></span>
+                      <span class="font-bold text-stone-900">New Crop Arrivals Export-Ready</span>
                     </div>
-                    <span class="font-mono text-emerald-900 font-bold bg-white px-2.5 py-0.5 rounded border border-emerald-200">EXPORT READY</span>
+                    <span class="font-mono text-saffron-900 font-bold bg-white px-2.5 py-0.5 rounded border border-saffron-200">2026 HARVEST</span>
                   </div>
                 </div>
               </div>
@@ -798,29 +709,29 @@
           </div>
         </section>
 
-        <!-- PRODUCT CATALOG SECTION -->
-        <section id="catalog" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+        <!-- COMMODITIES GRID -->
+        <section id="catalog" class="py-16 sm:py-20 bg-white border-b border-stone-200">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
               <div>
-                <span class="text-xs font-bold text-emerald-800 tracking-widest uppercase bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
+                <span class="text-xs font-bold text-saffron-800 tracking-widest uppercase bg-saffron-50 border border-saffron-200 px-3 py-1 rounded-full">
                   Export Commodities
                 </span>
-                <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-brand-950 mt-2">
-                  Featured Product Catalog
+                <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-stone-900 mt-2">
+                  Featured Export Offerings
                 </h2>
-                <p class="text-sm text-slate-500 mt-1 max-w-2xl">
-                  Click any commodity below to view its <b>dedicated export specification page</b>, testing certifications, and container capacities.
+                <p class="text-sm text-stone-500 mt-1 max-w-2xl">
+                  Click any commodity below to open its <b>dedicated export specification page</b>, laboratory parameters, and container loading volumes.
                 </p>
               </div>
 
-              <!-- Filters -->
-              <div class="flex flex-wrap items-center gap-2 bg-slate-100 p-1.5 rounded-xl border border-slate-200 text-xs font-semibold">
-                <button onclick="filterCatalog('all')" id="btn-all" class="cat-pill active px-3.5 py-2 rounded-lg bg-brand-950 text-white shadow-sm transition">All Offerings</button>
-                <button onclick="filterCatalog('spices')" id="btn-spices" class="cat-pill px-3.5 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition">Spices</button>
-                <button onclick="filterCatalog('dry-fruits')" id="btn-dry-fruits" class="cat-pill px-3.5 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition">Dry Fruits & Makhana</button>
-                <button onclick="filterCatalog('dehydrated')" id="btn-dehydrated" class="cat-pill px-3.5 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition">Dehydrated Onion</button>
+              <!-- Filter Pills -->
+              <div class="flex flex-wrap items-center gap-2 bg-stone-100 p-1.5 rounded-xl border border-stone-200 text-xs font-semibold">
+                <button onclick="filterCatalog('all')" id="btn-all" class="cat-pill active px-3.5 py-2 rounded-lg bg-obsidian-950 text-white shadow-sm transition">All Offerings</button>
+                <button onclick="filterCatalog('spices')" id="btn-spices" class="cat-pill px-3.5 py-2 rounded-lg text-stone-600 hover:text-stone-900 transition">Spices</button>
+                <button onclick="filterCatalog('dry-fruits')" id="btn-dry-fruits" class="cat-pill px-3.5 py-2 rounded-lg text-stone-600 hover:text-stone-900 transition">Dry Fruits & Makhana</button>
+                <button onclick="filterCatalog('dehydrated')" id="btn-dehydrated" class="cat-pill px-3.5 py-2 rounded-lg text-stone-600 hover:text-stone-900 transition">Dehydrated Onion</button>
               </div>
             </div>
 
@@ -833,57 +744,57 @@
         </section>
 
         <!-- STANDARDS SECTION -->
-        <section class="py-16 bg-[#f7faf7] border-b border-slate-200">
+        <section class="py-16 bg-[#faf7f2] border-b border-stone-200">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
-              <span class="text-xs font-bold text-emerald-800 tracking-widest uppercase bg-emerald-100 border border-emerald-300 px-3 py-1 rounded-full">
+              <span class="text-xs font-bold text-saffron-800 tracking-widest uppercase bg-saffron-100 border border-saffron-300 px-3 py-1 rounded-full">
                 Quality Verification
               </span>
-              <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-brand-950 mt-3">
-                Export Compliance & Testing Protocols
+              <h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-stone-900 mt-3">
+                Export Compliance & Laboratory Protocols
               </h2>
-              <p class="text-sm text-slate-600 mt-2">
-                Every shipment is accompanied by comprehensive Eurofins / SGS laboratory analysis certificates, phytosanitary verification, and strict moisture protection.
+              <p class="text-sm text-stone-600 mt-2">
+                Every container is backed by comprehensive Eurofins / SGS laboratory analysis reports, phytosanitary verification, and ocean container moisture care.
               </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow">
-                <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-800 mb-4 font-cinzel font-bold text-xl">
+              <div class="bg-white p-6 rounded-2xl border border-stone-200 card-luxe">
+                <div class="w-12 h-12 rounded-xl bg-saffron-50 border border-saffron-200 flex items-center justify-center text-saffron-800 mb-4 font-cinzel font-bold text-xl">
                   01
                 </div>
-                <h4 class="font-cinzel font-bold text-base text-brand-950">Pesticide & MRL Testing</h4>
-                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                <h4 class="font-cinzel font-bold text-base text-stone-900">Pesticide & MRL Testing</h4>
+                <p class="text-xs text-stone-500 mt-2 leading-relaxed">
                   Batch-wise Eurofins/SGS test reports ensuring zero non-compliant organochlorine or ethylene oxide (ETO) residues for European Union and US FDA clearance.
                 </p>
               </div>
 
-              <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow">
-                <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-800 mb-4 font-cinzel font-bold text-xl">
+              <div class="bg-white p-6 rounded-2xl border border-stone-200 card-luxe">
+                <div class="w-12 h-12 rounded-xl bg-saffron-50 border border-saffron-200 flex items-center justify-center text-saffron-800 mb-4 font-cinzel font-bold text-xl">
                   02
                 </div>
-                <h4 class="font-cinzel font-bold text-base text-brand-950">Steam Sterilization</h4>
-                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                <h4 class="font-cinzel font-bold text-base text-stone-900">Steam Sterilization</h4>
+                <p class="text-xs text-stone-500 mt-2 leading-relaxed">
                   High-temperature short-time (HTST) steam sterilization eliminates Salmonella, E. Coli, and coliforms without chemical residues while preserving essential oils.
                 </p>
               </div>
 
-              <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow">
-                <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-800 mb-4 font-cinzel font-bold text-xl">
+              <div class="bg-white p-6 rounded-2xl border border-stone-200 card-luxe">
+                <div class="w-12 h-12 rounded-xl bg-saffron-50 border border-saffron-200 flex items-center justify-center text-saffron-800 mb-4 font-cinzel font-bold text-xl">
                   03
                 </div>
-                <h4 class="font-cinzel font-bold text-base text-brand-950">Optical Sortex Cleansing</h4>
-                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                <h4 class="font-cinzel font-bold text-base text-stone-900">Optical Sortex Cleansing</h4>
+                <p class="text-xs text-stone-500 mt-2 leading-relaxed">
                   Multispectral high-speed Buhler optical sorters purge defective seeds, foreign weeds, discolored grains, glass, and metal contaminants with 99.9% accuracy.
                 </p>
               </div>
 
-              <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow">
-                <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-800 mb-4 font-cinzel font-bold text-xl">
+              <div class="bg-white p-6 rounded-2xl border border-stone-200 card-luxe">
+                <div class="w-12 h-12 rounded-xl bg-saffron-50 border border-saffron-200 flex items-center justify-center text-saffron-800 mb-4 font-cinzel font-bold text-xl">
                   04
                 </div>
-                <h4 class="font-cinzel font-bold text-base text-brand-950">Container Moisture Care</h4>
-                <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+                <h4 class="font-cinzel font-bold text-base text-stone-900">Container Moisture Care</h4>
+                <p class="text-xs text-stone-500 mt-2 leading-relaxed">
                   Heavy-duty kraft container liners and high-absorption hanging calcium chloride desiccants prevent condensation and container sweat during ocean transit.
                 </p>
               </div>
@@ -893,50 +804,52 @@
       `;
     }
 
-    // TEMPLATE: Product Card Component
     function renderProductCard(p) {
       return `
-        <div class="product-item ${p.category} bg-[#fbfdfa] rounded-2xl border border-slate-200 card-shadow card-shadow-hover transition duration-300 overflow-hidden flex flex-col">
-          <div class="h-48 overflow-hidden relative bg-slate-100">
-            <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover">
-            <div class="absolute top-3 right-3 bg-white/95 backdrop-blur px-2.5 py-1 rounded-md text-[11px] font-bold text-brand-950 border border-slate-200 shadow-sm">
+        <div class="product-item ${p.category} bg-[#faf7f2] rounded-2xl border border-stone-200 card-luxe transition duration-300 overflow-hidden flex flex-col">
+          <div class="h-48 overflow-hidden relative bg-stone-100">
+            <img src="${p.image}" 
+                 onerror="this.onerror=null;this.src='${p.fallbackImage}';" 
+                 alt="${p.title}" 
+                 class="w-full h-full object-cover">
+            <div class="absolute top-3 right-3 bg-white/95 backdrop-blur px-2.5 py-1 rounded-md text-[11px] font-bold text-stone-900 border border-stone-200 shadow-sm">
               ${p.tag}
             </div>
-            <div class="absolute bottom-3 left-3 bg-brand-950/80 backdrop-blur px-2.5 py-0.5 rounded text-[10px] font-bold text-white uppercase tracking-wider">
+            <div class="absolute bottom-3 left-3 bg-obsidian-950/80 backdrop-blur px-2.5 py-0.5 rounded text-[10px] font-bold text-white uppercase tracking-wider">
               HS: ${p.hsCode}
             </div>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <div class="flex items-start justify-between gap-2">
-                <h3 class="text-xl font-cinzel font-bold text-brand-950">${p.title}</h3>
+                <h3 class="text-xl font-cinzel font-bold text-stone-900">${p.title}</h3>
               </div>
-              <p class="text-xs text-emerald-800 font-semibold mt-0.5">${p.hindiName} • <span class="font-mono text-slate-500 font-normal italic">${p.botanicalName}</span></p>
+              <p class="text-xs text-saffron-700 font-semibold mt-0.5">${p.hindiName} • <span class="font-mono text-stone-500 font-normal italic">${p.botanicalName}</span></p>
               
-              <p class="text-xs text-slate-600 mt-3 line-clamp-2 leading-relaxed">
+              <p class="text-xs text-stone-600 mt-3 line-clamp-2 leading-relaxed">
                 ${p.shortDesc}
               </p>
 
               <!-- Mini Specs Preview -->
-              <div class="mt-4 border-t border-b border-slate-200/80 py-3 space-y-1 text-xs">
-                <div class="flex justify-between text-slate-600">
+              <div class="mt-4 border-t border-b border-stone-200/80 py-3 space-y-1 text-xs">
+                <div class="flex justify-between text-stone-600">
                   <span>Origin:</span>
-                  <span class="font-semibold text-slate-900">${p.origin}</span>
+                  <span class="font-semibold text-stone-900">${p.origin}</span>
                 </div>
-                <div class="flex justify-between text-slate-600">
-                  <span>Primary Packing:</span>
-                  <span class="font-semibold text-slate-900">${p.specs.find(s => s.key.includes('Pack'))?.val || '25kg / 50kg Bags'}</span>
+                <div class="flex justify-between text-stone-600">
+                  <span>Standard Packing:</span>
+                  <span class="font-semibold text-stone-900">${p.specs.find(s => s.key.includes('Pack'))?.val || '25kg / 50kg Bags'}</span>
                 </div>
               </div>
             </div>
 
-            <!-- Action Buttons -->
+            <!-- Actions -->
             <div class="pt-5 mt-auto flex items-center gap-2">
-              <a href="#/product/${p.id}" class="flex-1 py-2.5 rounded-xl font-bold text-xs bg-brand-950 text-white hover:bg-brand-900 transition flex items-center justify-center gap-1.5 shadow-sm">
+              <a href="#/product/${p.id}" class="flex-1 py-2.5 rounded-xl font-bold text-xs bg-obsidian-950 text-white hover:bg-saffron-600 transition flex items-center justify-center gap-1.5 shadow-sm">
                 <span>View Full Page & Specs</span>
-                <svg class="w-3.5 h-3.5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                <svg class="w-3.5 h-3.5 text-amberGold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
-              <button onclick="requestQuoteFor('${p.title}')" title="Request Quick Quote" class="p-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-emerald-50 hover:text-emerald-900 transition">
+              <button onclick="requestQuoteFor('${p.title}')" title="Request Quick Quote" class="p-2.5 rounded-xl border border-stone-300 text-stone-700 hover:bg-saffron-50 hover:text-saffron-800 transition">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
               </button>
             </div>
@@ -945,100 +858,102 @@
       `;
     }
 
-    // TEMPLATE: Dedicated Product Detail Page
     function renderProductDetailPage(p) {
       return `
-        <article class="py-10 bg-white border-b border-slate-200">
+        <article class="py-10 bg-white border-b border-stone-200">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <!-- Breadcrumb Navigation -->
-            <nav class="flex items-center space-x-2 text-xs text-slate-500 mb-6">
-              <a href="#/" class="hover:text-emerald-800 transition font-medium">Home</a>
+            <nav class="flex items-center space-x-2 text-xs text-stone-500 mb-6">
+              <a href="#/" class="hover:text-saffron-700 transition font-medium">Home</a>
               <span>/</span>
-              <a href="#/products" class="hover:text-emerald-800 transition font-medium">Commodities</a>
+              <a href="#/products" class="hover:text-saffron-700 transition font-medium">Commodities</a>
               <span>/</span>
-              <span class="text-brand-950 font-bold">${p.title}</span>
+              <span class="text-stone-900 font-bold">${p.title}</span>
             </nav>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
               
-              <!-- Left Visual & Highlights -->
+              <!-- Left Visual & Safeguards -->
               <div class="lg:col-span-6 space-y-6">
-                <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-lg aspect-[4/3] relative bg-slate-100">
-                  <img src="${p.image}" alt="${p.seoTitle}" class="w-full h-full object-cover">
-                  <div class="absolute top-4 left-4 bg-brand-950/90 backdrop-blur px-3 py-1.5 rounded-xl text-xs font-bold text-white">
+                <div class="rounded-3xl overflow-hidden border border-stone-200 shadow-lg aspect-[4/3] relative bg-stone-100">
+                  <img src="${p.image}" 
+                       onerror="this.onerror=null;this.src='${p.fallbackImage}';" 
+                       alt="${p.seoTitle}" 
+                       class="w-full h-full object-cover">
+                  <div class="absolute top-4 left-4 bg-obsidian-950/90 backdrop-blur px-3 py-1.5 rounded-xl text-xs font-bold text-white">
                     ${p.tag}
                   </div>
-                  <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-xl text-xs font-mono font-bold text-slate-900 border border-slate-200 shadow">
+                  <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-xl text-xs font-mono font-bold text-stone-900 border border-stone-200 shadow">
                     HS CODE: ${p.hsCode}
                   </div>
                 </div>
 
-                <!-- Quality Highlights Box -->
-                <div class="bg-emerald-50/70 border border-emerald-200/80 rounded-2xl p-6">
-                  <h4 class="font-cinzel font-bold text-brand-950 text-sm mb-3">Certified Quality Safeguards</h4>
-                  <ul class="space-y-2.5 text-xs text-slate-700">
+                <!-- Quality Safeguards Box -->
+                <div class="bg-saffron-50/70 border border-saffron-200/80 rounded-2xl p-6">
+                  <h4 class="font-cinzel font-bold text-stone-900 text-sm mb-3">Certified Quality Safeguards</h4>
+                  <ul class="space-y-2.5 text-xs text-stone-700">
                     ${p.qualityPoints.map(q => `
                       <li class="flex items-start gap-2">
-                        <svg class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <svg class="w-4 h-4 text-saffron-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         <span>${q}</span>
                       </li>
                     `).join('')}
                   </ul>
                 </div>
 
-                <!-- Back to Catalog Link -->
+                <!-- Return Button -->
                 <div>
-                  <a href="#/" class="inline-flex items-center text-xs font-bold text-emerald-800 hover:text-emerald-950 transition gap-1.5">
+                  <a href="#/" class="inline-flex items-center text-xs font-bold text-saffron-700 hover:text-saffron-900 transition gap-1.5">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-                    <span>Back to Full Commodities List</span>
+                    <span>Back to Full Commodities Catalog</span>
                   </a>
                 </div>
               </div>
 
-              <!-- Right Specification Sheet -->
+              <!-- Right Technical Specification Sheet -->
               <div class="lg:col-span-6 space-y-6">
                 <div>
-                  <div class="inline-block bg-gold-100 text-gold-700 border border-gold-300 text-[11px] font-bold px-2.5 py-0.5 rounded-md uppercase tracking-wider mb-2">
+                  <div class="inline-block bg-saffron-100 text-saffron-800 border border-saffron-300 text-[11px] font-bold px-2.5 py-0.5 rounded-md uppercase tracking-wider mb-2">
                     Origin: ${p.origin}
                   </div>
-                  <h1 class="text-3xl sm:text-4xl font-cinzel font-black text-brand-950 leading-tight">
+                  <h1 class="text-3xl sm:text-4xl font-cinzel font-black text-stone-900 leading-tight">
                     ${p.title}
                   </h1>
-                  <p class="text-sm font-semibold text-emerald-800 mt-1">
+                  <p class="text-sm font-semibold text-saffron-700 mt-1">
                     Hindi: ${p.hindiName} • Botanical: <span class="italic font-serif">${p.botanicalName}</span>
                   </p>
                 </div>
 
-                <div class="prose prose-sm text-slate-600 leading-relaxed">
+                <div class="prose prose-sm text-stone-600 leading-relaxed">
                   <p>${p.details}</p>
                 </div>
 
                 <!-- Technical Specs Table -->
-                <div class="bg-[#fbfdfa] rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-                  <div class="bg-slate-100/80 px-4 py-2.5 border-b border-slate-200 font-cinzel font-bold text-xs text-brand-950">
+                <div class="bg-[#faf7f2] rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+                  <div class="bg-stone-100/80 px-4 py-2.5 border-b border-stone-200 font-cinzel font-bold text-xs text-stone-900">
                     Export Technical Specification Sheet
                   </div>
                   <table class="w-full text-xs text-left">
-                    <tbody class="divide-y divide-slate-200">
+                    <tbody class="divide-y divide-stone-200">
                       ${p.specs.map(s => `
                         <tr>
-                          <td class="py-2.5 px-4 font-medium text-slate-500 w-2/5 bg-slate-50/50">${s.key}</td>
-                          <td class="py-2.5 px-4 font-bold text-slate-900">${s.val}</td>
+                          <td class="py-2.5 px-4 font-medium text-stone-500 w-2/5 bg-stone-50/50">${s.key}</td>
+                          <td class="py-2.5 px-4 font-bold text-stone-900">${s.val}</td>
                         </tr>
                       `).join('')}
                     </tbody>
                   </table>
                 </div>
 
-                <!-- Direct Action Buttons -->
+                <!-- Direct Actions -->
                 <div class="flex flex-wrap gap-3 pt-2">
-                  <button onclick="requestQuoteFor('${p.title}')" class="flex-1 py-3.5 px-6 rounded-xl font-bold text-xs text-white bg-brand-950 hover:bg-brand-900 shadow-md shadow-brand-950/20 transition flex items-center justify-center gap-2">
+                  <button onclick="requestQuoteFor('${p.title}')" class="flex-1 py-3.5 px-6 rounded-xl font-bold text-xs text-white bg-saffron-600 hover:bg-saffron-700 shadow-md shadow-saffron-600/20 transition flex items-center justify-center gap-2">
                     <span>Inquire for ${p.title} (FCL / LCL)</span>
-                    <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    <svg class="w-4 h-4 text-amberGold-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                   </button>
-                  <button onclick="shareViaWhatsAppProduct('${p.title}', '${p.hsCode}')" class="py-3.5 px-5 rounded-xl font-bold text-xs text-emerald-950 bg-emerald-100 hover:bg-emerald-200 border border-emerald-300 transition flex items-center gap-2">
-                    <svg class="w-4 h-4 text-emerald-700" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                  <button onclick="shareViaWhatsAppProduct('${p.title}', '${p.hsCode}')" class="py-3.5 px-5 rounded-xl font-bold text-xs text-saffron-950 bg-saffron-100 hover:bg-saffron-200 border border-saffron-300 transition flex items-center gap-2">
+                    <svg class="w-4 h-4 text-saffron-700" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
                     <span>WhatsApp Specs</span>
                   </button>
                 </div>
@@ -1051,19 +966,18 @@
       `;
     }
 
-    // TEMPLATE: Category Listing Page
     function renderCatalogPage(cat, title) {
       const filtered = cat === 'all' ? COMMODITIES : COMMODITIES.filter(c => c.category === cat);
       return `
-        <div class="py-12 bg-white border-b border-slate-200">
+        <div class="py-12 bg-white border-b border-stone-200">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-8">
-              <a href="#/" class="inline-flex items-center text-xs font-bold text-emerald-800 hover:text-emerald-950 transition gap-1.5 mb-3">
+              <a href="#/" class="inline-flex items-center text-xs font-bold text-saffron-700 hover:text-saffron-900 transition gap-1.5 mb-3">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
                 <span>Back to Home</span>
               </a>
-              <h1 class="text-3xl sm:text-4xl font-cinzel font-bold text-brand-950">${title}</h1>
-              <p class="text-xs text-slate-500 mt-1">Select a commodity to view laboratory parameters, packing sizes, and container capacities.</p>
+              <h1 class="text-3xl sm:text-4xl font-cinzel font-bold text-stone-900">${title}</h1>
+              <p class="text-xs text-stone-500 mt-1">Select a commodity to view laboratory parameters, packing sizes, and container capacities.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               ${filtered.map(c => renderProductCard(c)).join('')}
@@ -1073,18 +987,17 @@
       `;
     }
 
-    // Filter cards on home page
     function filterCatalog(category) {
       const pills = document.querySelectorAll('.cat-pill');
       pills.forEach(p => {
-        p.classList.remove('bg-brand-950', 'text-white');
-        p.classList.add('text-slate-600');
+        p.classList.remove('bg-obsidian-950', 'text-white');
+        p.classList.add('text-stone-600');
       });
 
       const active = document.getElementById(`btn-${category}`);
       if (active) {
-        active.classList.remove('text-slate-600');
-        active.classList.add('bg-brand-950', 'text-white');
+        active.classList.remove('text-stone-600');
+        active.classList.add('bg-obsidian-950', 'text-white');
       }
 
       const cards = document.querySelectorAll('.product-item');
@@ -1097,20 +1010,14 @@
       });
     }
 
-    // Smooth Quote Pre-fill
     function requestQuoteFor(productName) {
       const select = document.getElementById('rfq-commodity');
       if (select) {
-        let found = false;
         for (let i = 0; i < select.options.length; i++) {
           if (select.options[i].text.toLowerCase().includes(productName.toLowerCase()) || productName.toLowerCase().includes(select.options[i].value.toLowerCase())) {
             select.selectedIndex = i;
-            found = true;
             break;
           }
-        }
-        if (!found) {
-          select.value = select.options[0].value;
         }
       }
 
@@ -1122,14 +1029,12 @@
       showToast(`Selected "${productName}" in quotation form.`);
     }
 
-    // WhatsApp sharing from product page
     function shareViaWhatsAppProduct(title, hs) {
       const text = `*Inquiry regarding ${title} (HS: ${hs})*%0A%0AHello Veeje Foods Export Desk, please share the current FOB Mundra / CIF quote and latest crop laboratory specification sheet for this commodity.`;
       const url = `https://wa.me/919999999999?text=${text}`;
       window.open(url, '_blank');
     }
 
-    // Submit form handler
     function handleFormSubmit(e) {
       e.preventDefault();
       const buyer = document.getElementById('buyer-name').value;
@@ -1141,7 +1046,6 @@
       e.target.reset();
     }
 
-    // WhatsApp forwarder
     function sendViaWhatsApp() {
       const buyer = document.getElementById('buyer-name').value || 'Buyer';
       const port = document.getElementById('destination-port').value || 'Discharge Port';
@@ -1157,7 +1061,6 @@
       window.open(waUrl, '_blank');
     }
 
-    // Non-blocking toast notifier (No alert())
     function showToast(msg) {
       const toast = document.getElementById('toast');
       const toastText = document.getElementById('toast-text');
