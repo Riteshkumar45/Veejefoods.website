@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veeje Foods | Premium Spices & Agro Commodities Export</title>
+  <meta name="description" content="Global exporter and bulk supplier of certified Indian spices, seeds, and agro-commodities. B2B, private label, and wholesale bulk orders." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#D4AF37',
+              darkgold: '#B89020',
+              deep: '#0F172A',
+              card: '#162032',
+              accent: '#C59A27',
+              border: '#27354A'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F9E79F 0%, #D4AF37 50%, #997300 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .badge-gold {
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: #E6CA65;
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased font-sans selection:bg-brand-gold selection:text-slate-950">
+
+  <!-- TOP BAR -->
+  <div class="bg-slate-900 border-b border-slate-800 text-xs py-2 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-6 text-slate-400">
+        <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-gold"></i> APEDA & FSSAI Registered</span>
+        <span class="hidden sm:flex items-center gap-1.5"><i data-lucide="globe-2" class="w-3.5 h-3.5 text-brand-gold"></i> Global Container Ports: Mundra & JNPT</span>
+      </div>
+      <div class="flex items-center space-x-4 text-slate-300">
+        <a href="mailto:exports@veejefoods.com" class="hover:text-brand-gold transition flex items-center gap-1">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i> exports@veejefoods.com
+        </a>
+        <a href="https://wa.me/" target="_blank" class="hover:text-brand-gold transition flex items-center gap-1">
+          <i data-lucide="message-square" class="w-3.5 h-3.5 text-emerald-400"></i> WhatsApp RFQ
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-darkgold to-brand-gold flex items-center justify-center font-serif font-bold text-slate-950 text-xl shadow-lg shadow-brand-gold/20">
+          V
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-bold tracking-tight text-white group-hover:text-brand-gold transition">VEEJE FOODS</span>
+          <span class="text-[10px] tracking-widest text-slate-400 uppercase">Export & Bulk Commodities</span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="#products" class="text-slate-300 hover:text-brand-gold transition">Commodities</a>
+        <a href="#specs" class="text-slate-300 hover:text-brand-gold transition">Export Standards</a>
+        <a href="#processing" class="text-slate-300 hover:text-brand-gold transition">Processing & Packing</a>
+        <a href="#about" class="text-slate-300 hover:text-brand-gold transition">About Us</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="#rfq" class="bg-gradient-to-r from-brand-gold to-brand-darkgold text-slate-950 text-sm font-semibold px-5 py-2.5 rounded-lg shadow-md hover:brightness-110 transition flex items-center gap-2">
+          <span>Request Bulk Quote</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="relative pt-20 pb-28 px-4 md:px-8 overflow-hidden hero-glow border-b border-slate-800/50">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full badge-gold text-xs font-semibold tracking-wide">
+          <i data-lucide="award" class="w-4 h-4 text-brand-gold"></i>
+          PREMIUM GRADE INDIAN SPICES EXPORTER
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          Pure Origin Spices for <br class="hidden sm:block" />
+          <span class="gold-gradient-text font-serif italic">Global Trade & Bulk Supply.</span>
+        </h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl leading-relaxed">
+          Sourcing, grading, steam-sterilization, and export-compliant packing for international importers, food processors, and national bulk wholesalers.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+          <a href="#rfq" class="px-7 py-3.5 bg-brand-gold hover:bg-brand-darkgold text-slate-950 font-bold rounded-lg transition shadow-lg shadow-brand-gold/20 flex items-center gap-2">
+            Get Container Pricing (FOB / CIF)
+          </a>
+          <a href="#products" class="px-7 py-3.5 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-semibold rounded-lg transition flex items-center gap-2">
+            View Product Catalog
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0 text-center">
+          <div>
+            <div class="text-2xl font-bold text-white">99.5%+</div>
+            <div class="text-xs text-slate-400 uppercase mt-1">Purity Guaranteed</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white">FOB/CIF</div>
+            <div class="text-xs text-slate-400 uppercase mt-1">Global Shipping</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white">Private Label</div>
+            <div class="text-xs text-slate-400 uppercase mt-1">Bulk Packaging</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 relative">
+        <div class="relative bg-gradient-to-b from-slate-800 to-slate-900 p-1 rounded-2xl shadow-2xl border border-slate-700/80">
+          <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1000&q=80" alt="Indian Spices Selection" class="rounded-xl object-cover h-[440px] w-full brightness-90 contrast-110" />
+          <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-950/85 backdrop-blur-md border border-slate-700/70">
+            <div class="flex items-center justify-between text-xs text-slate-300">
+              <span class="flex items-center gap-1.5 text-brand-gold font-semibold">
+                <i data-lucide="check-circle" class="w-4 h-4"></i> Lab Tested Quality
+              </span>
+              <span>Moisture & Volatile Oil Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="products" class="py-24 px-4 md:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+      <h2 class="text-xs font-bold text-brand-gold tracking-widest uppercase">Export Portfolio</h2>
+      <h3 class="text-3xl md:text-4xl font-bold text-white">Sourced Directly From Indian Cultivation Belts</h3>
+      <p class="text-slate-400">Machine-cleaned, sortexed, and packaged to meet stringent European, USFDA, and Middle Eastern phytosanitary benchmarks.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Cumin -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-gold/50 transition flex flex-col justify-between group">
+        <div>
+          <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80" alt="Cumin Seeds" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="p-6 space-y-3">
+            <span class="text-[11px] font-semibold text-brand-gold uppercase tracking-wider">Origin: Gujarat / Rajasthan</span>
+            <h4 class="text-xl font-bold text-white">Cumin Seeds (Jeera)</h4>
+            <p class="text-slate-400 text-sm">Available in Europe Quality (99% purity) and Singapore Quality (98%-99.5%). High essential oil aroma.</p>
+            <div class="pt-2 text-xs text-slate-400 space-y-1">
+              <div>• Purity: 99% / 99.5% Sortex Cleaned</div>
+              <div>• Volatile Oil: Min 2.5%</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="#rfq" class="w-full py-2.5 bg-slate-800 hover:bg-brand-gold hover:text-slate-950 font-semibold text-xs uppercase tracking-wider rounded-lg transition flex items-center justify-center gap-2">
+            Inquire Bulk Price
+          </a>
+        </div>
+      </div>
+
+      <!-- Black Pepper -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-gold/50 transition flex flex-col justify-between group">
+        <div>
+          <img src="https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80" alt="Black Pepper" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="p-6 space-y-3">
+            <span class="text-[11px] font-semibold text-brand-gold uppercase tracking-wider">Origin: Malabar / South India</span>
+            <h4 class="text-xl font-bold text-white">Black Pepper (Kali Mirch)</h4>
+            <p class="text-slate-400 text-sm">Graded 500 G/L to 550 G/L Garbled & Ungarbled bold berries. Sun-dried and vacuum-packed on request.</p>
+            <div class="pt-2 text-xs text-slate-400 space-y-1">
+              <div>• Density: 500 G/L – 570 G/L</div>
+              <div>• Piperine Content: 4% - 6%</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="#rfq" class="w-full py-2.5 bg-slate-800 hover:bg-brand-gold hover:text-slate-950 font-semibold text-xs uppercase tracking-wider rounded-lg transition flex items-center justify-center gap-2">
+            Inquire Bulk Price
+          </a>
+        </div>
+      </div>
+
+      <!-- Turmeric -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-gold/50 transition flex flex-col justify-between group">
+        <div>
+          <img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=800&q=80" alt="Turmeric Finger and Powder" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="p-6 space-y-3">
+            <span class="text-[11px] font-semibold text-brand-gold uppercase tracking-wider">Origin: Nizamabad / Salem / Sangli</span>
+            <h4 class="text-xl font-bold text-white">Turmeric (Finger & Ground)</h4>
+            <p class="text-slate-400 text-sm">High-curcumin finger and fine-mesh turmeric powder. Ideal for food manufacturing, nutraceuticals, and extraction.</p>
+            <div class="pt-2 text-xs text-slate-400 space-y-1">
+              <div>• Curcumin Level: 2.5% to 5.0%+</div>
+              <div>• Moisture: Max 10%</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="#rfq" class="w-full py-2.5 bg-slate-800 hover:bg-brand-gold hover:text-slate-950 font-semibold text-xs uppercase tracking-wider rounded-lg transition flex items-center justify-center gap-2">
+            Inquire Bulk Price
+          </a>
+        </div>
+      </div>
+
+      <!-- Red Chilli -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-gold/50 transition flex flex-col justify-between group">
+        <div>
+          <img src="https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&w=800&q=80" alt="Dry Red Chilli" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="p-6 space-y-3">
+            <span class="text-[11px] font-semibold text-brand-gold uppercase tracking-wider">Origin: Guntur / Byadgi</span>
+            <h4 class="text-xl font-bold text-white">Dry Red Chilli & Flakes</h4>
+            <p class="text-slate-400 text-sm">Stemless and with-stem red chillies (Sannam S4, Teja, Byadgi for intense natural color without additives).</p>
+            <div class="pt-2 text-xs text-slate-400 space-y-1">
+              <div>• SHU Heat Range: 20,000 – 90,000 SHU</div>
+              <div>• ASTA Color Value: 60 – 140 ASTA</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="#rfq" class="w-full py-2.5 bg-slate-800 hover:bg-brand-gold hover:text-slate-950 font-semibold text-xs uppercase tracking-wider rounded-lg transition flex items-center justify-center gap-2">
+            Inquire Bulk Price
+          </a>
+        </div>
+      </div>
+
+      <!-- Coriander -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-gold/50 transition flex flex-col justify-between group">
+        <div>
+          <img src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=80" alt="Coriander Seeds" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="p-6 space-y-3">
+            <span class="text-[11px] font-semibold text-brand-gold uppercase tracking-wider">Origin: Rajasthan / Madhya Pradesh</span>
+            <h4 class="text-xl font-bold text-white">Coriander Seeds (Dhaniya)</h4>
+            <p class="text-slate-400 text-sm">Eagle, Scooter, and Badami qualities. Available as whole aromatic seeds, split (dal), and fine ground powder.</p>
+            <div class="pt-2 text-xs text-slate-400 space-y-1">
+              <div>• Purity: 98% – 99.5% Machine Cleaned</div>
+              <div>• Moisture: Max 9%</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="#rfq" class="w-full py-2.5 bg-slate-800 hover:bg-brand-gold hover:text-slate-950 font-semibold text-xs uppercase tracking-wider rounded-lg transition flex items-center justify-center gap-2">
+            Inquire Bulk Price
+          </a>
+        </div>
+      </div>
+
+      <!-- Green Cardamom -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-brand-gold/50 transition flex flex-col justify-between group">
+        <div>
+          <img src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=800&q=80" alt="Green Cardamom" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500" />
+          <div class="p-6 space-y-3">
+            <span class="text-[11px] font-semibold text-brand-gold uppercase tracking-wider">Origin: Idukki, Kerala</span>
+            <h4 class="text-xl font-bold text-white">Green Cardamom (Elaichi)</h4>
+            <p class="text-slate-400 text-sm">Bold 7mm to 8mm+ vibrant green pods with high essential oil value. Preserved in multi-layer moisture barrier foil bags.</p>
+            <div class="pt-2 text-xs text-slate-400 space-y-1">
+              <div>• Pod Size: 7mm / 8mm / Jumbo 8.5mm</div>
+              <div>• Grade: Extra Bold Natural Green</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="#rfq" class="w-full py-2.5 bg-slate-800 hover:bg-brand-gold hover:text-slate-950 font-semibold text-xs uppercase tracking-wider rounded-lg transition flex items-center justify-center gap-2">
+            Inquire Bulk Price
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPORT SPECIFICATIONS & COMPLIANCE -->
+  <section id="specs" class="py-20 bg-slate-900/60 border-y border-slate-800 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Global Standards</span>
+          <h3 class="text-3xl font-bold text-white">Certified Processing, Fumigation & Containerization</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Every shipment processed by Veeje Foods undergoes pre-shipment inspection (SGS, Bureau Veritas on request) to fulfill the import requirements of North America, UK, Europe, GCC, and Southeast Asia.
+          </p>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Aluminum phosphide / Methyl bromide fumigation certified</li>
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Steam sterilized / ETO treated as per country protocols</li>
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-brand-gold"></i> Container desiccant protection against maritime condensation</li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+          <div class="p-6 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+            <i data-lucide="package" class="w-6 h-6 text-brand-gold"></i>
+            <h4 class="font-bold text-white text-base">Bulk Packing Options</h4>
+            <p class="text-xs text-slate-400">25kg / 50kg PP bags, multi-wall paper bags, jute bags, and 1-ton jumbo FIBC bags with poly liners.</p>
+          </div>
+          <div class="p-6 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+            <i data-lucide="tag" class="w-6 h-6 text-brand-gold"></i>
+            <h4 class="font-bold text-white text-base">Private Label / OEM</h4>
+            <p class="text-xs text-slate-400">Custom retail packaging (stand-up zip pouches, pet jars, mono cartons) with customized client branding.</p>
+          </div>
+          <div class="p-6 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+            <i data-lucide="anchor" class="w-6 h-6 text-brand-gold"></i>
+            <h4 class="font-bold text-white text-base">Incoterms Supported</h4>
+            <p class="text-xs text-slate-400">FOB (Mundra, Pipavav, JNPT Nhava Sheva), CFR, CIF to any major commercial seaport worldwide.</p>
+          </div>
+          <div class="p-6 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+            <i data-lucide="file-check-2" class="w-6 h-6 text-brand-gold"></i>
+            <h4 class="font-bold text-white text-base">Export Documentation</h4>
+            <p class="text-xs text-slate-400">Bill of Lading, Commercial Invoice, Packing List, Certificate of Origin, Phytosanitary, and Health Certificates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RFQ FORM -->
+  <section id="rfq" class="py-24 px-4 md:px-8 max-w-4xl mx-auto">
+    <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-8 md:p-12 rounded-3xl shadow-2xl">
+      <div class="text-center space-y-2 mb-8">
+        <span class="text-xs font-bold text-brand-gold uppercase tracking-wider">Fast Quotation Turnaround</span>
+        <h3 class="text-2xl md:text-3xl font-bold text-white">Request an Export / Bulk Quotation</h3>
+        <p class="text-slate-400 text-sm">Submit your required commodity specifications, destination port, and tonnage.</p>
+      </div>
+
+      <form onsubmit="handleFormSubmit(event)" class="space-y-6">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-2">Your Name / Company *</label>
+            <input type="text" required placeholder="Acme Food Importers Ltd" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-2">Business Email *</label>
+            <input type="email" required placeholder="procurement@acmefoods.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-2">Commodity Required *</label>
+            <select class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
+              <option>Cumin Seeds (Jeera)</option>
+              <option>Black Pepper (Kali Mirch)</option>
+              <option>Turmeric (Finger / Powder)</option>
+              <option>Dry Red Chilli (Whole / Flakes)</option>
+              <option>Coriander Seeds</option>
+              <option>Green Cardamom</option>
+              <option>Mixed Container / Other Agro Commodities</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-2">Estimated Quantity / Volume *</label>
+            <input type="text" required placeholder="e.g. 1 x 20ft FCL (14 MT) or 5 MT" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-2">Destination Port / Delivery City *</label>
+            <input type="text" required placeholder="e.g. Jebel Ali, Dubai / Felixstowe, UK / Domestic India" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-2">Preferred Incoterms</label>
+            <select class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
+              <option>FOB (Mundra / JNPT India)</option>
+              <option>CIF (Destination Port)</option>
+              <option>CFR (Cost and Freight)</option>
+              <option>EXW (Ex-Works Factory)</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-medium text-slate-300 mb-2">Additional Specifications / Packaging Requirements</label>
+          <textarea rows="3" placeholder="Specify purity requirements, mesh size for powders, customized bags, or special lab testing needs..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 bg-brand-gold hover:bg-brand-darkgold text-slate-950 font-bold rounded-lg transition duration-200 uppercase tracking-wider text-sm shadow-xl shadow-brand-gold/20">
+          Submit RFQ for Official Commercial Proforma
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-900 py-12 px-4 md:px-8 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="space-y-1 text-center md:text-left">
+        <div class="text-white font-bold text-base">VEEJE FOODS</div>
+        <p>© 2026 Veeje Foods (veejefoods.com). All Rights Reserved.</p>
+        <p class="text-slate-600">Export Certified Food & Agricultural Commodities Merchant.</p>
+      </div>
+      <div class="flex items-center space-x-6 text-slate-400">
+        <a href="#products" class="hover:text-brand-gold transition">Products</a>
+        <a href="#specs" class="hover:text-brand-gold transition">Quality Specs</a>
+        <a href="#rfq" class="hover:text-brand-gold transition">Inquire</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert("Thank you! Your quotation request has been recorded. Our export desk will contact you with product COA and pricing.");
+    }
+  </script>
+</body>
+</html>
